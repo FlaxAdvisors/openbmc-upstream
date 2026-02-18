@@ -1,0 +1,165 @@
+{
+    "Exposes": [
+        {
+            "Address": "0x4e",
+            "Bus": 6,
+            "Name": "MB_INLET_TEMP",
+            "Thresholds": [
+                {
+                    "Direction": "greater than",
+                    "Name": "upper critical",
+                    "Severity": 1,
+                    "Value": 90
+                },
+                {
+                    "Direction": "greater than",
+                    "Name": "upper warning",
+                    "Severity": 0,
+                    "Value": 70
+                }
+            ],
+            "Type": "TMP421"
+        },
+        {
+            "Address": "0x4f",
+            "Bus": 6,
+            "Name": "MB_OUTLET_TEMP",
+            "Thresholds": [
+                {
+                    "Direction": "greater than",
+                    "Name": "upper critical",
+                    "Severity": 1,
+                    "Value": 90
+                },
+                {
+                    "Direction": "greater than",
+                    "Name": "upper warning",
+                    "Severity": 0,
+                    "Value": 70
+                }
+            ],
+            "Type": "TMP421"
+        },
+        {
+            "Address": "0x1f",
+            "Bus": 8,
+            "Name": "MB_MEZZ_TEMP",
+            "Thresholds": [
+                {
+                    "Direction": "greater than",
+                    "Name": "upper critical",
+                    "Severity": 1,
+                    "Value": 90
+                }
+            ],
+            "Type": "TMP421"
+        },
+        {
+            "Address": "0x45",
+            "Bus": 7,
+            "Name": "MB_HSC",
+            "Type": "ADM1278",
+            "Thresholds": [
+                {
+                    "Direction": "greater than",
+                    "Name": "upper critical",
+                    "Severity": 1,
+                    "Value": 300
+                }
+            ],
+            "PowerState": "On",
+            "ShuntResistorMicroOhms": 250
+        },
+        {
+            "Index": 0,
+            "Name": "MB_FAN0",
+            "Type": "AspeedFan",
+            "Connector": {
+                "PWM": 0,
+                "Tachs": [0]
+            },
+            "Thresholds": [
+                {
+                    "Direction": "less than",
+                    "Name": "lower critical",
+                    "Severity": 1,
+                    "Value": 500
+                }
+            ]
+        },
+        {
+            "Index": 1,
+            "Name": "MB_FAN1",
+            "Type": "AspeedFan",
+            "Connector": {
+                "PWM": 1,
+                "Tachs": [2]
+            },
+            "Thresholds": [
+                {
+                    "Direction": "less than",
+                    "Name": "lower critical",
+                    "Severity": 1,
+                    "Value": 500
+                }
+            ]
+        },
+        {
+            "Index": 0,
+            "Name": "MB_ADC_P12V",
+            "ScaleFactor": 1,
+            "Type": "ADC"
+        },
+        {
+            "Index": 1,
+            "Name": "MB_ADC_P5V_STBY",
+            "ScaleFactor": 1,
+            "Type": "ADC"
+        },
+        {
+            "Index": 2,
+            "Name": "MB_ADC_P3V3_STBY",
+            "ScaleFactor": 1,
+            "Type": "ADC"
+        },
+        {
+            "Index": 3,
+            "Name": "MB_ADC_P1V8_STBY",
+            "ScaleFactor": 1,
+            "Type": "ADC"
+        },
+        {
+            "Index": 4,
+            "Name": "MB_ADC_P1V2_STBY",
+            "ScaleFactor": 1,
+            "Type": "ADC"
+        },
+        {
+            "Index": 5,
+            "Name": "MB_ADC_P1V05_STBY",
+            "ScaleFactor": 1,
+            "Type": "ADC"
+        },
+        {
+            "Index": 6,
+            "Name": "MB_ADC_PVNN_PCH_STBY",
+            "ScaleFactor": 1,
+            "Type": "ADC"
+        },
+        {
+            "Index": 7,
+            "Name": "MB_ADC_P3V3",
+            "ScaleFactor": 1,
+            "Type": "ADC"
+        }
+    ],
+    "Name": "TiogaPass Baseboard",
+    "Probe": "TRUE",
+    "Type": "Board",
+    "xyz.openbmc_project.Inventory.Decorator.Asset": {
+        "Manufacturer": "Facebook",
+        "Model": "TiogaPass",
+        "PartNumber": "",
+        "SerialNumber": ""
+    }
+}
