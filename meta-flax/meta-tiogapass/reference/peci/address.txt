@@ -1,0 +1,6 @@
+#root@tiogapass:~# cat /sys/bus/peci/devices/*/address  # PECI client addresses
+cat: can't open '/sys/bus/peci/devices/*/address': No such file or directory
+#root@tiogapass:~# cat /sys/bus/peci/devices/peci-0/
+delete_device  name           new_device     of_node/       peci_dev/      subsystem/     uevent
+#root@tiogapass:~# cat /sys/bus/peci/devices/peci-0/name
+1e78b000.peci-bus

@@ -1,0 +1,7 @@
+#The gpio data is in reference/gpio/*
+
+#root@tiogapass:~# systemctl list-units | grep -i power
+  mapper-wait@-xyz-openbmc_project-control-host0-power_restore_policy.service                              loaded active     exited          Wait for /xyz/openbmc_project/control/host0/power_restore_policy
+  xyz.openbmc_project.Chassis.Control.Power.service                                                        loaded active     running         Intel Power Control
+  system-power\x2don.slice                                                                                 loaded active     active          system-power\x2don.slice
+  

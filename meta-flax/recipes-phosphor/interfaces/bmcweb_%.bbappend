@@ -1,6 +1,6 @@
 EXTRA_OEMESON:append = "\
     -Dredfish-dbus-log=enabled \
-    -Dmeta-tls-common-name-parsing=enabled \
+    -Dmutual-tls-auth=enabled \
     -Dredfish-dump-log=enabled \
     -Dexperimental-redfish-dbus-log-subscription=enabled \
     -Dvm-websocket=enabled \

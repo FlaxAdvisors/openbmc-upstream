@@ -1,0 +1,10 @@
+root@tiogapass:~# for x in /sys/class/hwmon/hwmon13/{in*_*,name}; do echo "$x $(cat $x)"; done
+/sys/class/hwmon/hwmon13/in1_input 0
+/sys/class/hwmon/hwmon13/in2_input 0
+/sys/class/hwmon/hwmon13/in3_input 1358
+/sys/class/hwmon/hwmon13/in4_input 1049
+/sys/class/hwmon/hwmon13/in5_input 998
+/sys/class/hwmon/hwmon13/in6_input 1362
+/sys/class/hwmon/hwmon13/in7_input 1353
+/sys/class/hwmon/hwmon13/in8_input 131
+/sys/class/hwmon/hwmon13/name iio_hwmon

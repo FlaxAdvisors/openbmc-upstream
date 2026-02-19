@@ -1,0 +1,6 @@
+#root@tiogapass:~# for x in /sys/class/hwmon/hwmon0/{fan*_*,pwm*,name}; do echo $x $(cat $x) ; done
+/sys/class/hwmon/hwmon0/fan1_input 3013
+/sys/class/hwmon/hwmon0/fan3_input 1627
+/sys/class/hwmon/hwmon0/pwm1 66
+/sys/class/hwmon/hwmon0/pwm2 25
+/sys/class/hwmon/hwmon0/name aspeed_pwm_tacho

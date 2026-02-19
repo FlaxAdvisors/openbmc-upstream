@@ -16,7 +16,7 @@ inherit meson pkgconfig obmc-phosphor-ipmiprovider-symlink
 
 PACKAGECONFIG ??= ""
 
-EXTRA_OEMESON="\
+EXTRA_OEMESON = "\
     -Dtests=disabled \
     -Dmachine='${MACHINE}' \
     -Dhost-instances='${OBMC_HOST_INSTANCES}' \

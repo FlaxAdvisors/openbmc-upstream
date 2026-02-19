@@ -1,0 +1,40 @@
+#root@tiogapass:~# mount | grep -v tmpfs
+sys on /sys type sysfs (rw,relatime)
+proc on /proc type proc (rw,relatime)
+/dev/mtdblock4 on /run/initramfs/ro type squashfs (ro,relatime)
+/dev/mtdblock5 on /run/initramfs/rw type jffs2 (rw,relatime)
+cow on / type overlay (rw,relatime,lowerdir=run/initramfs/ro,upperdir=run/initramfs/rw/cow,workdir=run/initramfs/rw/work)
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+devpts on /dev/pts type devpts (rw,relatime,gid=5,mode=620,ptmxmode=666)
+cgroup2 on /sys/fs/cgroup/unified type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,name=systemd)
+none on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+
+
+#root@tiogapass:~# cat /etc/fstab
+# stock fstab - you probably want to override this with a machine specific one
+
+/dev/root            /                    auto       defaults              1  1
+proc                 /proc                proc       defaults              0  0
+devpts               /dev/pts             devpts     mode=0620,ptmxmode=0666,gid=5      0  0
+tmpfs                /run                 tmpfs      mode=0755,nodev,nosuid,strictatime 0  0
+tmpfs                /var/volatile        tmpfs      defaults              0  0
+
+# uncomment this if your device has a SD/MMC/Transflash slot
+#/dev/mmcblk0p1       /media/card          auto       defaults,sync,noauto  0  0
+
+
+#root@tiogapass:~# df -h
+Filesystem                Size      Used Available Use% Mounted on
+dev                     235.4M         0    235.4M   0% /dev
+tmpfs                   244.4M     19.8M    224.6M   8% /run
+/dev/mtdblock4           21.0M     21.0M         0 100% /run/initramfs/ro
+/dev/mtdblock5            1.8M      1.3M    496.0K  73% /run/initramfs/rw
+cow                       1.8M      1.3M    496.0K  73% /
+tmpfs                   244.4M      8.0K    244.4M   0% /dev/shm
+tmpfs                   244.4M         0    244.4M   0% /sys/fs/cgroup
+tmpfs                   244.4M     84.0K    244.3M   0% /tmp
+tmpfs                   244.4M     20.0K    244.4M   0% /var/volatile

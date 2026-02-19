@@ -75,7 +75,8 @@
             "Name": "MB_FAN0",
             "Type": "AspeedFan",
             "Connector": {
-                "PWM": 0,
+                "Name": "System Fan 0",
+                "Pwm": 0,
                 "Tachs": [0]
             },
             "Thresholds": [
@@ -88,11 +89,12 @@
             ]
         },
         {
-            "Index": 1,
+            "Index": 2,
             "Name": "MB_FAN1",
             "Type": "AspeedFan",
             "Connector": {
-                "PWM": 1,
+                "Name": "System Fan 1",
+                "Pwm": 1,
                 "Tachs": [2]
             },
             "Thresholds": [

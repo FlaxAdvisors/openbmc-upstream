@@ -1,0 +1,112 @@
+#root@tiogapass:~# systemctl list-units --type=service --no-pager
+  UNIT                                               LOAD   ACTIVE     SUB          JOB     DESCRIPTION
+  avahi-daemon.service                               loaded active     running              Avahi mDNS/DNS-SD Stack
+  beepcode-mgr.service                               loaded active     running              Beep code manager
+  bmcweb.service                                     loaded active     running              Start bmcweb server
+  clear-once.service                                 loaded active     exited               Clear one time boot overrides
+  dbus-broker.service                                loaded active     running              D-Bus System Message Bus
+  dropbear@1-192.168.88.245:22-192.168.88.3:42192.s… loaded active     running              SSH Per-Connection Server (192.168.88.3:42192)
+  dropbear@3-192.168.88.245:22-192.168.88.3:35860.s… loaded active     running              SSH Per-Connection Server (192.168.88.3:35860)
+  dropbearkey.service                                loaded active     exited               SSH Key Generation
+  id-led-off.service                                 loaded inactive   dead         start   turn off the ID LED when BMC is ready
+  ipmb.service                                       loaded active     running              IPMB bridge
+  kmod-static-nodes.service                          loaded inactive   dead         start   Create list of static device nodes for the current…
+  mapper-wait@-xyz-openbmc_project-control-host0-bo… loaded active     exited               Wait for /xyz/openbmc_project/control/host0/boot/o…
+  mapper-wait@-xyz-openbmc_project-control-host0-bo… loaded active     exited               Wait for /xyz/openbmc_project/control/host0/boot
+  mapper-wait@-xyz-openbmc_project-control-host0-po… loaded active     exited               Wait for /xyz/openbmc_project/control/host0/power_…
+  mapper-wait@-xyz-openbmc_project-control-host0-re… loaded active     exited               Wait for /xyz/openbmc_project/control/host0/restri…
+  mapper-wait@-xyz-openbmc_project-led-groups-bmc_b… loaded activating start-pre    start   Wait for /xyz/openbmc_project/led/groups/bmc_booted
+  mapper-wait@-xyz-openbmc_project-led-groups.servi… loaded activating start-pre    start   Wait for /xyz/openbmc_project/led/groups
+  mapper-wait@-xyz-openbmc_project-time-sync_method… loaded active     exited               Wait for /xyz/openbmc_project/time/sync_method
+  nscd.service                                       loaded active     running              Name Service Cache Daemon
+  nslcd.service                                      loaded active     running              LDAP daemon
+  obmc-console@ttyS1.service                         loaded active     running              Phosphor Console Muxer listening on device /dev/tt…
+  obmc-dump-monitor.service                          loaded active     running              Phosphor Dump core monitor.
+  obmc-fru-fault-monitor.service                     loaded inactive   dead         start   FRU Fault monitor service
+  obmc-led-group-start@bmc_booted.service            loaded inactive   dead         start   Assert bmc_booted LED
+  phosphor-certificate-manager@authority.service     loaded active     running              Phosphor certificate manager for authority
+  phosphor-certificate-manager@bmcweb.service        loaded active     running              Phosphor certificate manager for bmcweb
+  phosphor-certificate-manager@nslcd.service         loaded active     running              Phosphor certificate manager for nslcd
+  phosphor-dbus-monitor.service                      loaded active     running              Phosphor DBus Monitor
+  phosphor-ipmi-host.service                         loaded active     running              Phosphor Inband IPMI
+  phosphor-ipmi-kcs@ipmi-kcs3.service                loaded active     running              Phosphor IPMI KCS DBus Bridge
+  phosphor-ipmi-net@eth0.service                     loaded active     running              Network IPMI daemon
+  phosphor-ipmi-net@eth1.service                     loaded active     running              Network IPMI daemon
+  phosphor-pid-control.service                       loaded active     running              Phosphor-Pid-Control Margin-based Fan Control Daem…
+  phosphor-systemd-target-monitor.service            loaded active     running              phosphor systemd target monitor
+  phosphor-watchdog.service                          loaded active     running              Phosphor Watchdog
+  rngd.service                                       loaded active     running              Hardware RNG Entropy Gatherer Daemon
+  rotate-event-logs.service                          loaded active     running              Rotate the event logs
+  rsyslog.service                                    loaded active     running              System Logging Service
+  serial-getty@ttyS4.service                         loaded active     running              Serial Getty on ttyS4
+● SetBaseboardFru.service                            loaded failed     failed               Reads GPIO and Loads the FRU
+  slpd-lite.service                                  loaded active     running              Lightweight SLP Server
+  start-ipkvm.service                                loaded active     running              OpenBMC ipKVM daemon
+  systemd-fsck-root.service                          loaded inactive   dead         start   File System Check on Root Device
+  systemd-hwdb-update.service                        loaded inactive   dead         start   Rebuild Hardware Database
+  systemd-journal-catalog-update.service             loaded inactive   dead         start   Rebuild Journal Catalog
+  systemd-journal-flush.service                      loaded active     exited               Flush Journal to Persistent Storage
+  systemd-journald.service                           loaded active     running      start   Journal Service
+  systemd-machine-id-commit.service                  loaded inactive   dead         start   Commit a transient machine-id on disk
+  systemd-modules-load.service                       loaded inactive   dead         start   Load Kernel Modules
+  systemd-networkd-wait-online.service               loaded active     exited               Wait for Network to be Configured
+  systemd-networkd.service                           loaded active     running              Network Service
+  systemd-pstore.service                             loaded inactive   dead         start   Platform Persistent Storage Archival
+  systemd-random-seed.service                        loaded active     exited       start   Load/Save Random Seed
+  systemd-remount-fs.service                         loaded active     exited       start   Remount Root and Kernel File Systems
+  systemd-resolved.service                           loaded active     running              Network Name Resolution
+  systemd-sysctl.service                             loaded active     exited               Apply Kernel Variables
+  systemd-sysusers.service                           loaded inactive   dead         start   Create System Users
+  systemd-timesyncd.service                          loaded active     running              Network Time Synchronization
+  systemd-tmpfiles-setup-dev.service                 loaded active     exited               Create Static Device Nodes in /dev
+  systemd-tmpfiles-setup.service                     loaded active     exited               Create Volatile Files and Directories
+  systemd-udev-trigger.service                       loaded active     exited               udev Coldplug all Devices
+  systemd-udevd.service                              loaded active     running              udev Kernel Device Manager
+  systemd-update-done.service                        loaded inactive   dead         start   Update is Completed
+  systemd-user-sessions.service                      loaded active     exited               Permit User Sessions
+  var-volatile-cache.service                         loaded inactive   dead         start   Bind mount volatile /var/cache
+  var-volatile-lib.service                           loaded inactive   dead         start   Bind mount volatile /var/lib
+  var-volatile-spool.service                         loaded inactive   dead         start   Bind mount volatile /var/spool
+  var-volatile-srv.service                           loaded inactive   dead         start   Bind mount volatile /srv
+  xyz.openbmc_project.adcsensor.service              loaded active     running      restart Adc Sensor
+  xyz.openbmc_project.Chassis.Control.Power.service  loaded active     running              Intel Power Control
+  xyz.openbmc_project.Dump.Manager.service           loaded active     running              Phosphor Dump Manager
+  xyz.openbmc_project.EntityManager.service          loaded activating auto-restart restart Entity Manager
+  xyz.openbmc_project.eventsensor.service            loaded active     running              Event Sensor
+  xyz.openbmc_project.exitairsensor.service          loaded active     running      restart Exit Air Temp Sensor
+  xyz.openbmc_project.fansensor.service              loaded active     running      restart Fan Sensor
+  xyz.openbmc_project.FruDevice.service              loaded active     running              Fru Device
+  xyz.openbmc_project.gpiosensor.service             loaded active     running              Gpio Sensor
+  xyz.openbmc_project.hwmontempsensor.service        loaded active     running      restart Hwmon Temp Sensor
+  xyz.openbmc_project.intrusionsensor.service        loaded active     running      restart Intrusion Sensor
+  xyz.openbmc_project.Inventory.Manager.service      loaded active     running              Phosphor Inventory Manager
+  xyz.openbmc_project.ipmbsensor.service             loaded active     running      restart IPMB Sensor
+  xyz.openbmc_project.Ldap.Config.service            loaded active     running              Phosphor Ldap config updater
+  xyz.openbmc_project.LDAP.PrivilegeMapper.service   loaded active     running              Phosphor LDAP privilege mapper
+● xyz.openbmc_project.LED.GroupManager.service       loaded failed     failed               Phosphor LED Group Management Daemon
+  xyz.openbmc_project.Logging.IPMI.service           loaded active     running              IPMI SEL Logging Service
+  xyz.openbmc_project.Logging.service                loaded active     running              Phosphor Log Manager
+  xyz.openbmc_project.mcutempsensor.service          loaded active     running      restart MCU Temp Sensor
+  xyz.openbmc_project.Network.service                loaded active     running              Phosphor Network Manager
+  xyz.openbmc_project.Network.SNMP.service           loaded active     running              Phosphor SNMP conf Manager
+  xyz.openbmc_project.ObjectMapper.service           loaded active     running              Phosphor DBus Service Discovery Manager
+  xyz.openbmc_project.PCIe.service                   loaded active     running              Service to get PCIe info over PECI
+  xyz.openbmc_project.psuevent.service               loaded active     running              IPMI Event-only Sensor
+  xyz.openbmc_project.psusensor.service              loaded active     running      restart PSU Sensor
+  xyz.openbmc_project.Settings.service               loaded active     running              Phosphor Settings Daemon
+  xyz.openbmc_project.Software.BMC.Updater.service   loaded active     running              OpenBMC Software Update Manager
+  xyz.openbmc_project.Software.Download.service      loaded active     running              Phosphor Download Manager
+  xyz.openbmc_project.Software.Version.service       loaded active     running              Phosphor Version Software Manager
+  xyz.openbmc_project.State.BMC.service              loaded active     running              Phosphor BMC State Manager
+  xyz.openbmc_project.Syslog.Config.service          loaded active     running              Rsyslog config updater
+  xyz.openbmc_project.Time.Manager.service           loaded active     running              Phosphor Time Manager daemon
+  xyz.openbmc_project.User.Manager.service           loaded active     running              Phosphor User Manager
+  xyz.openbmc_project.VirtualMedia.service           loaded active     running              Virtual Media Service
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+JOB    = Pending job for the unit.
+
+102 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use 'systemctl list-unit-files'.

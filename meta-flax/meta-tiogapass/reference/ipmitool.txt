@@ -1,0 +1,397 @@
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin mc info
+Device ID                 : 32
+Device Revision           : 1
+Firmware Revision         : 4.07
+IPMI Version              : 2.0
+Manufacturer ID           : 40092
+Manufacturer Name         : Wiwynn Corporation
+Product ID                : 7220 (0x1c34)
+Product Name              : Unknown (0x1C34)
+Device Available          : yes
+Provides Device SDRs      : no
+Additional Device Support :
+    Sensor Device
+    SDR Repository Device
+    SEL Device
+    FRU Inventory Device
+    IPMB Event Receiver
+    IPMB Event Generator
+    Chassis Device
+Aux Firmware Rev Info     :
+    0x3b
+    0x11
+    0x03
+    0x00
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin fru print 0
+ Chassis Type          : Rack Mount Chassis
+ Chassis Part Number   : B60.00X1C.0001
+ Chassis Serial        : C.M.B60.00X1C.000106201800IR
+ Chassis Extra         : M7DK606200762
+ Chassis Extra         : M7DK606200899
+ Board Mfg Date        : Fri 02 Feb 2018 11:52:00 PM EST EST
+ Board Mfg             : Wistron
+ Board Product         : Tioga Pass Single Side
+ Board Serial          : WTH18040C5ZA1
+ Board Part Number     : B91.00X10.0002
+ Board Extra           : 02-000243
+ Board Extra           : LBG-1G
+ Product Manufacturer  : Wiwynn
+ Product Name          : Type6 Tioga Pass Single Side
+ Product Part Number   : B91.00X01.0001
+ Product Version       : MP
+ Product Serial        : WTF1811027MA1
+ Product Asset Tag     : 4121790
+ Product Extra         : 01-002930
+ Product Extra         : 2018-04-04 10:46:42+08:00
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin channel info 0
+Channel 0x0 info:
+  Channel Medium Type   : IPMB (I2C)
+  Channel Protocol Type : IPMB-1.0
+  Session Support       : session-less
+  Active Session Count  : 0
+  Protocol Vendor ID    : 7154
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin channel info 1
+Channel 0x1 info:
+  Channel Medium Type   : 802.3 LAN
+  Channel Protocol Type : IPMB-1.0
+  Session Support       : multi-session
+  Active Session Count  : 0
+  Protocol Vendor ID    : 7154
+  Volatile(active) Settings
+    Alerting            : enabled
+    Per-message Auth    : disabled
+    User Level Auth     : enabled
+    Access Mode         : always available
+  Non-Volatile Settings
+    Alerting            : enabled
+    Per-message Auth    : disabled
+    User Level Auth     : enabled
+    Access Mode         : always available
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin channel info 8
+Channel 0x8 info:
+  Channel Medium Type   : 802.3 LAN
+  Channel Protocol Type : IPMB-1.0
+  Session Support       : multi-session
+  Active Session Count  : 1
+  Protocol Vendor ID    : 7154
+  Volatile(active) Settings
+    Alerting            : enabled
+    Per-message Auth    : disabled
+    User Level Auth     : enabled
+    Access Mode         : always available
+  Non-Volatile Settings
+    Alerting            : enabled
+    Per-message Auth    : disabled
+    User Level Auth     : enabled
+    Access Mode         : always available
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin sdr list full
+Outlet_Temp      | 22 degrees C      | ok
+Inlet_Temp0      | 32 degrees C      | ok
+Inlet_Temp1      | 30 degrees C      | ok
+P0 Temp          | no reading        | ns
+P1 Temp          | no reading        | ns
+P0 DTSmax        | no reading        | ns
+P1 DTSmax        | no reading        | ns
+HSC_Temp         | 21 degrees C      | ok
+HSC Output Curr  | 0.82 Amps         | ok
+HSC Input Volt   | 12.12 Volts       | ok
+HSC Input Power  | 9.90 Watts        | ok
+PCH Temp         | no reading        | ns
+PCH VR Temp      | no reading        | ns
+PCH VR Curr      | no reading        | ns
+PCH VR Vol       | no reading        | ns
+PCH VR POUT      | no reading        | ns
+P0 VR0 Temp      | no reading        | ns
+P0 VR1 Temp      | no reading        | ns
+P1 VR0 Temp      | no reading        | ns
+P1 VR1 Temp      | no reading        | ns
+P0 DIMM_A1 Temp  | no reading        | ns
+P0 DIMM_B1 Temp  | no reading        | ns
+P0 DIMM_C1 Temp  | no reading        | ns
+P0 DIMM_D1 Temp  | no reading        | ns
+P0 DIMM_E1 Temp  | no reading        | ns
+P0 DIMM_F1 Temp  | no reading        | ns
+P1 DIMM_G1 Temp  | no reading        | ns
+P1 DIMM_H1 Temp  | no reading        | ns
+P1 DIMM_J1 Temp  | no reading        | ns
+P1 DIMM_K1 Temp  | no reading        | ns
+P1 DIMM_L1 Temp  | no reading        | ns
+P1 DIMM_M1 Temp  | no reading        | ns
+DIMM_Zone_A1B1C1 | no reading        | ns
+DIMM_Zone_D1E1F1 | no reading        | ns
+DIMM_Zone_G1H1J1 | no reading        | ns
+DIMM_Zone_K1L1M1 | no reading        | ns
+P0 DIMM VR0 Temp | no reading        | ns
+P0 DIMM VR1 Temp | no reading        | ns
+P1 DIMM VR0 Temp | no reading        | ns
+P1 DIMM VR1 Temp | no reading        | ns
+P0 core VR0 POUT | no reading        | ns
+P0 core VR1 POUT | no reading        | ns
+P1 core VR0 POUT | no reading        | ns
+P1 core VR1 POUT | no reading        | ns
+P0 DIMM VR0 POUT | no reading        | ns
+P0 DIMM VR1 POUT | no reading        | ns
+P1 DIMM VR0 POUT | no reading        | ns
+P1 DIMM VR1 POUT | no reading        | ns
+P0 core VR0 Curr | no reading        | ns
+P0 core VR1 Curr | no reading        | ns
+P1 core VR0 Curr | no reading        | ns
+P1 core VR1 Curr | no reading        | ns
+P0 DIMM VR0 Curr | no reading        | ns
+P0 DIMM VR1 Curr | no reading        | ns
+P1 DIMM VR0 Curr | no reading        | ns
+P1 DIMM VR1 Curr | no reading        | ns
+P3V3             | no reading        | ns
+P5V              | no reading        | ns
+P12V_STBY        | 12.04 Volts       | ok
+P1V05_PCH_STBY   | 1.05 Volts        | ok
+PVNN_PCH_STBY    | 1 Volts           | ok
+P3V3_STBY        | 3.36 Volts        | ok
+P5V_STBY         | 5.16 Volts        | ok
+P3V_BAT          | 3.04 Volts        | ok
+P0 core VR0 Vol  | no reading        | ns
+P0 core VR1 Vol  | no reading        | ns
+P1 core VR0 Vol  | no reading        | ns
+P1 core VR1 Vol  | no reading        | ns
+P0 DIMM VR0 Vol  | no reading        | ns
+P0 DIMM VR1 Vol  | no reading        | ns
+P1 DIMM VR0 Vol  | no reading        | ns
+P1 DIMM VR1 Vol  | no reading        | ns
+SYS FAN 0        | no reading        | ns
+SYS FAN 1        | no reading        | ns
+Airflow          | no reading        | ns
+P0 Package Power | no reading        | ns
+P1 Package Power | no reading        | ns
+AVA_RTemp        | no reading        | ns
+AVA_FTemp        | no reading        | ns
+AVA_NVME0_Temp   | no reading        | ns
+AVA_NVME1_Temp   | no reading        | ns
+AVA_NVME2_Temp   | no reading        | ns
+AVA_NVME3_Temp   | no reading        | ns
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin sdr list compact
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin sensor list
+Outlet_Temp      | 22.000     | degrees C  | ok    | na        | na        | na        | na        | 90.000    | na
+Inlet_Temp0      | 32.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na
+Inlet_Temp1      | 30.000     | degrees C  | ok    | na        | na        | na        | na        | 40.000    | na
+P0 Temp          | na         | degrees C  | na    | na        | na        | na        | na        | 89.000    | na
+P1 Temp          | na         | degrees C  | na    | na        | na        | na        | na        | 89.000    | na
+P0 DTSmax        | na         | degrees C  | na    | na        | na        | na        | na        | na        | na
+P1 DTSmax        | na         | degrees C  | na    | na        | na        | na        | na        | na        | na
+HSC_Temp         | 20.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na
+HSC Output Curr  | 0.820      | Amps       | ok    | na        | na        | na        | na        | 52.820    | na
+HSC Input Volt   | 12.120     | Volts      | ok    | na        | 10.800    | na        | na        | 13.200    | na
+HSC Input Power  | 9.900      | Watts      | ok    | na        | na        | na        | na        | 792.000   | na
+PCH Temp         | na         | degrees C  | na    | na        | na        | na        | na        | 84.000    | na
+PCH VR Temp      | na         | degrees C  | na    | na        | na        | na        | na        | 80.000    | na
+PCH VR Curr      | na         | Amps       | na    | na        | na        | na        | na        | 23.000    | na
+PCH VR Vol       | na         | Volts      | na    | na        | 0.760     | na        | na        | 1.100     | na
+PCH VR POUT      | na         | Watts      | na    | na        | na        | na        | na        | 26.000    | na
+P0 VR0 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | 100.000   | na
+P0 VR1 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | 100.000   | na
+P1 VR0 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | 100.000   | na
+P1 VR1 Temp      | na         | degrees C  | na    | na        | na        | na        | na        | 100.000   | na
+P0 DIMM_A1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P0 DIMM_B1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P0 DIMM_C1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P0 DIMM_D1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P0 DIMM_E1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P0 DIMM_F1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P1 DIMM_G1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P1 DIMM_H1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P1 DIMM_J1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P1 DIMM_K1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P1 DIMM_L1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+P1 DIMM_M1 Temp  | na         | degrees C  | na    | na        | na        | na        | na        | 81.000    | na
+DIMM_Zone_A1B1C1 | na         | degrees C  | na    | na        | na        | na        | na        | na        | na
+DIMM_Zone_D1E1F1 | na         | degrees C  | na    | na        | na        | na        | na        | na        | na
+DIMM_Zone_G1H1J1 | na         | degrees C  | na    | na        | na        | na        | na        | na        | na
+DIMM_Zone_K1L1M1 | na         | degrees C  | na    | na        | na        | na        | na        | na        | na
+P0 DIMM VR0 Temp | na         | degrees C  | na    | na        | na        | na        | na        | 90.000    | na
+P0 DIMM VR1 Temp | na         | degrees C  | na    | na        | na        | na        | na        | 90.000    | na
+P1 DIMM VR0 Temp | na         | degrees C  | na    | na        | na        | na        | na        | 90.000    | na
+P1 DIMM VR1 Temp | na         | degrees C  | na    | na        | na        | na        | na        | 90.000    | na
+P0 core VR0 POUT | na         | Watts      | na    | na        | na        | na        | na        | 420.000   | na
+P0 core VR1 POUT | na         | Watts      | na    | na        | na        | na        | na        | 30.000    | na
+P1 core VR0 POUT | na         | Watts      | na    | na        | na        | na        | na        | 420.000   | na
+P1 core VR1 POUT | na         | Watts      | na    | na        | na        | na        | na        | 30.000    | na
+P0 DIMM VR0 POUT | na         | Watts      | na    | na        | na        | na        | na        | 66.000    | na
+P0 DIMM VR1 POUT | na         | Watts      | na    | na        | na        | na        | na        | 66.000    | na
+P1 DIMM VR0 POUT | na         | Watts      | na    | na        | na        | na        | na        | 66.000    | na
+P1 DIMM VR1 POUT | na         | Watts      | na    | na        | na        | na        | na        | 66.000    | na
+P0 core VR0 Curr | na         | Amps       | na    | na        | na        | na        | na        | 235.000   | na
+P0 core VR1 Curr | na         | Amps       | na    | na        | na        | na        | na        | 24.000    | na
+P1 core VR0 Curr | na         | Amps       | na    | na        | na        | na        | na        | 235.000   | na
+P1 core VR1 Curr | na         | Amps       | na    | na        | na        | na        | na        | 24.000    | na
+P0 DIMM VR0 Curr | na         | Amps       | na    | na        | na        | na        | na        | 40.000    | na
+P0 DIMM VR1 Curr | na         | Amps       | na    | na        | na        | na        | na        | 40.000    | na
+P1 DIMM VR0 Curr | na         | Amps       | na    | na        | na        | na        | na        | 40.000    | na
+P1 DIMM VR1 Curr | na         | Amps       | na    | na        | na        | na        | na        | 40.000    | na
+P3V3             | na         | Volts      | na    | na        | 2.960     | na        | na        | 3.620     | na
+P5V              | na         | Volts      | na    | na        | 4.500     | na        | na        | 5.490     | na
+P12V_STBY        | 12.040     | Volts      | ok    | na        | 10.710    | na        | na        | 13.230    | na
+P1V05_PCH_STBY   | 1.050      | Volts      | ok    | na        | 0.940     | na        | na        | 1.150     | na
+PVNN_PCH_STBY    | 1.000      | Volts      | ok    | na        | 0.760     | na        | na        | 1.100     | na
+P3V3_STBY        | 3.340      | Volts      | ok    | na        | 2.960     | na        | na        | 3.620     | na
+P5V_STBY         | 5.130      | Volts      | ok    | na        | 4.500     | na        | na        | 5.490     | na
+P3V_BAT          | 3.040      | Volts      | ok    | na        | 2.720     | na        | na        | 3.740     | na
+P0 core VR0 Vol  | na         | Volts      | na    | na        | 1.450     | na        | na        | 2.050     | na
+P0 core VR1 Vol  | na         | Volts      | na    | na        | 0.800     | na        | na        | 1.200     | na
+P1 core VR0 Vol  | na         | Volts      | na    | na        | 1.450     | na        | na        | 2.050     | na
+P1 core VR1 Vol  | na         | Volts      | na    | na        | 0.800     | na        | na        | 1.200     | na
+P0 DIMM VR0 Vol  | na         | Volts      | na    | na        | 1.080     | na        | na        | 1.320     | na
+P0 DIMM VR1 Vol  | na         | Volts      | na    | na        | 1.080     | na        | na        | 1.320     | na
+P1 DIMM VR0 Vol  | na         | Volts      | na    | na        | 1.080     | na        | na        | 1.320     | na
+P1 DIMM VR1 Vol  | na         | Volts      | na    | na        | 1.080     | na        | na        | 1.320     | na
+SYS FAN 0        | na         | RPM        | na    | na        | 500.000   | na        | na        | 11500.000 | na
+SYS FAN 1        | na         | RPM        | na    | na        | 500.000   | na        | na        | 11500.000 | na
+Airflow          | na         | CFM        | na    | na        | na        | na        | na        | na        | na
+P0 Package Power | na         | Watts      | na    | na        | na        | na        | na        | na        | na
+P1 Package Power | na         | Watts      | na    | na        | na        | na        | na        | na        | na
+AVA_RTemp        | na         | degrees C  | na    | na        | na        | na        | na        | na        | na
+AVA_FTemp        | na         | degrees C  | na    | na        | na        | na        | na        | na        | na
+AVA_NVME0_Temp   | na         | degrees C  | na    | na        | na        | na        | na        | 70.000    | na
+AVA_NVME1_Temp   | na         | degrees C  | na    | na        | na        | na        | na        | 70.000    | na
+AVA_NVME2_Temp   | na         | degrees C  | na    | na        | na        | na        | na        | 70.000    | na
+AVA_NVME3_Temp   | na         | degrees C  | na    | na        | na        | na        | na        | 70.000    | na
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin lan print 1
+Set in Progress         : Set Complete
+Auth Type Support       : MD5
+Auth Type Enable        : Callback : MD5
+                        : User     : MD5
+                        : Operator : MD5
+                        : Admin    : MD5
+                        : OEM      : MD5
+IP Address Source       : DHCP Address
+IP Address              : 0.0.0.0
+Subnet Mask             : 0.0.0.0
+MAC Address             : 00:00:00:00:00:00
+SNMP Community String   : AMI
+IP Header               : TTL=0x40 Flags=0x40 Precedence=0x00 TOS=0x10
+BMC ARP Control         : ARP Responses Enabled, Gratuitous ARP Disabled
+Gratituous ARP Intrvl   : 0.0 seconds
+Default Gateway IP      : 0.0.0.0
+Default Gateway MAC     : 00:00:00:00:00:00
+Backup Gateway IP       : 0.0.0.0
+Backup Gateway MAC      : 00:00:00:00:00:00
+802.1q VLAN ID          : Disabled
+802.1q VLAN Priority    : 0
+RMCP+ Cipher Suites     : 0,1,2,3,6,7,8,11,12,15,16,17
+Cipher Suite Priv Max   : caaaaaaaaaaaXXX
+                        :     X=Cipher Suite Unused
+                        :     c=CALLBACK
+                        :     u=USER
+                        :     o=OPERATOR
+                        :     a=ADMIN
+                        :     O=OEM
+Bad Password Threshold  : 0
+Invalid password disable: no
+Attempt Count Reset Int.: 0
+User Lockout Interval   : 0
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin lan print 8
+Set in Progress         : Set Complete
+Auth Type Support       : MD5
+Auth Type Enable        : Callback : MD5
+                        : User     : MD5
+                        : Operator : MD5
+                        : Admin    : MD5
+                        : OEM      : MD5
+IP Address Source       : DHCP Address
+IP Address              : 192.168.88.245
+Subnet Mask             : 255.255.255.0
+MAC Address             : b8:ce:f6:fc:1b:1c
+SNMP Community String   : AMI
+IP Header               : TTL=0x40 Flags=0x40 Precedence=0x00 TOS=0x10
+BMC ARP Control         : ARP Responses Enabled, Gratuitous ARP Disabled
+Gratituous ARP Intrvl   : 0.0 seconds
+Default Gateway IP      : 192.168.88.3
+Default Gateway MAC     : f4:8e:38:80:0a:1a
+Backup Gateway IP       : 0.0.0.0
+Backup Gateway MAC      : 00:00:00:00:00:00
+802.1q VLAN ID          : Disabled
+802.1q VLAN Priority    : 0
+RMCP+ Cipher Suites     : 0,1,2,3,6,7,8,11,12,15,16,17
+Cipher Suite Priv Max   : caaaaaaaaaaaXXX
+                        :     X=Cipher Suite Unused
+                        :     c=CALLBACK
+                        :     u=USER
+                        :     o=OPERATOR
+                        :     a=ADMIN
+                        :     O=OEM
+Bad Password Threshold  : 0
+Invalid password disable: no
+Attempt Count Reset Int.: 0
+User Lockout Interval   : 0
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin sel list last 20
+   1 | 02/18/2026 | 06:02:07 PM EST | Power Unit #0xf3 | AC lost | Asserted
+   2 | 02/18/2026 | 06:02:11 PM EST | Processor #0xd0 | Presence detected | Asserted
+   3 | 02/18/2026 | 06:02:11 PM EST | Processor #0xd0 | Presence detected | Asserted
+   4 | 02/18/2026 | 06:02:11 PM EST | System ACPI Power State #0xd3 | S5/G2: soft-off | Asserted
+   5 | 02/18/2026 | 06:02:24 PM EST | System ACPI Power State #0xd3 | S0/G0: working | Asserted
+   6 | 02/18/2026 | 06:02:29 PM EST | System Boot Initiated #0xf8 | System Restart | Asserted
+   7 | 02/18/2026 | 06:37:13 PM EST | System ACPI Power State #0xd3 | S5/G2: soft-off | Asserted
+   8 | 02/18/2026 | 06:37:17 PM EST | Power Unit #0xf3 | Power off/down | Asserted
+   9 | 02/18/2026 | 06:37:28 PM EST | Microcontroller #0x16 | Transition to Running | Asserted
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin sel info
+SEL Information
+Version          : 1.5 (v1.5, v2 compliant)
+Entries          : 9
+Free Space       : 65340 bytes
+Percent Used     : 0%
+Last Add Time    : 02/18/2026 06:37:28 PM EST
+Last Del Time    : Not Available
+Overflow         : false
+Supported Cmds   : 'Delete' 'Partial Add' 'Reserve' 'Get Alloc Info'
+# of Alloc Units : 3639
+Alloc Unit Size  : 18
+# Free Units     : 3630
+Largest Free Blk : 3630
+Max Record Size  : 1
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin chassis status
+System Power         : off
+Power Overload       : false
+Power Interlock      : inactive
+Main Power Fault     : false
+Power Control Fault  : false
+Power Restore Policy : always-on
+Last Power Event     : ac-failed
+Chassis Intrusion    : inactive
+Front-Panel Lockout  : inactive
+Drive Fault          : false
+Cooling/Fan Fault    : false
+Sleep Button Disable : allowed
+Diag Button Disable  : allowed
+Reset Button Disable : allowed
+Power Button Disable : allowed
+Sleep Button Disabled: false
+Diag Button Disabled : false
+Reset Button Disabled: false
+Power Button Disabled: false
+
+==========
+ipmitool -I lanplus -H 192.168.88.245 -U admin -P admin chassis restart_cause
+System restart cause: chassis power control command

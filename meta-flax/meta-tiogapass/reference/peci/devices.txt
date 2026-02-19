@@ -1,0 +1,4 @@
+#root@tiogapass:~# ls -la /sys/bus/peci/devices/
+drwxr-xr-x    2 root     root             0 Jan  1 00:00 .
+drwxr-xr-x    4 root     root             0 Jan  1 00:00 ..
+lrwxrwxrwx    1 root     root             0 Jan  1 00:00 peci-0 -> ../../../devices/platform/ahb/ahb:apb/ahb:apb:bus@1e78b000/1e78b000.peci-bus/peci-0

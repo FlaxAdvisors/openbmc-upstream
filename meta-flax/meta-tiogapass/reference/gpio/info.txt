@@ -1,0 +1,234 @@
+#root@tiogapass:~# gpioinfo
+gpiochip0 - 232 lines:
+	line   0: "BMC_CPLD_FPGA_SEL" unused output active-high
+	line   1:      unnamed       unused   input  active-high
+	line   2:      unnamed       unused   input  active-high
+	line   3:      unnamed       unused   input  active-high
+	line   4:      unnamed       kernel   input  active-high [used]
+	line   5:      unnamed       kernel   input  active-high [used]
+	line   6:      unnamed       unused   input  active-high
+	line   7:      unnamed       unused   input  active-high
+	line   8:      unnamed       unused   input  active-high
+	line   9: "BMC_DEBUG_EN" unused input active-high
+	line  10:      unnamed       unused   input  active-high
+	line  11:      unnamed       unused   input  active-high
+	line  12:      unnamed       unused   input  active-high
+	line  13:   "BMC_PPIN"       unused   input  active-high
+	line  14:      unnamed "power-control" input active-high [used]
+	line  15: "IRQ_PVDDQ_GHJ_VRHOT_LVT3" unused input active-high
+	line  16:      unnamed       kernel   input  active-high [used]
+	line  17:      unnamed       kernel   input  active-high [used]
+	line  18:      unnamed       unused   input  active-high
+	line  19:      unnamed       unused   input  active-high
+	line  20:      unnamed       unused   input  active-high
+	line  21:      unnamed       unused   input  active-high
+	line  22:      unnamed       unused   input  active-high
+	line  23:      unnamed       unused   input  active-high
+	line  24: "BIOS_MRC_DEBUG_MSG_DIS" unused output active-high
+	line  25: "BOARD_REV_ID0" unused input active-high
+	line  26:      unnamed       unused   input  active-high
+	line  27: "BOARD_REV_ID1" unused input active-high
+	line  28: "IRQ_DIMM_SAVE_LVT3" unused input active-high
+	line  29: "BOARD_REV_ID2" unused input active-high
+	line  30: "CPU_ERR0_LVT3_BMC" unused input active-high
+	line  31: "CPU_ERR1_LVT3_BMC" unused input active-high
+	line  32: "RESET_BUTTON" "power-control" input active-high [used]
+	line  33:  "RESET_OUT"       unused  output  active-high
+	line  34: "POWER_BUTTON" "power-control" input active-high [used]
+	line  35:  "POWER_OUT"       unused  output  active-high
+	line  36: "NMI_BUTTON"       unused   input  active-high
+	line  37:      unnamed       unused   input  active-high
+	line  38: "CPU0_PROCHOT_LVT3_ BMC" unused input active-high
+	line  39: "CPU1_PROCHOT_LVT3_ BMC" unused input active-high
+	line  40: "IRQ_PVDDQ_ABC_VRHOT_LVT3" unused input active-high
+	line  41:      unnamed       unused  output  active-high
+	line  42: "IRQ_PVCCIN_CPU0_VRHOT_LVC3" unused input active-high
+	line  43: "IRQ_PVCCIN_CPU1_VRHOT_LVC3" unused input active-high
+	line  44: "IRQ_PVDDQ_KLM_VRHOT_LVT3" unused input active-high
+	line  45:      unnamed       unused   input  active-high
+	line  46: "P3VBAT_BRIDGE_EN" unused output active-high
+	line  47:      unnamed       unused   input  active-high
+	line  48: "CPU_ERR2_LVT3" unused input active-high
+	line  49: "CPU_CATERR_LVT3" unused input active-high
+	line  50: "PCH_BMC_THERMTRIP" unused input active-high
+	line  51: "CPU0_SKTOCC_LVT3" unused input active-high
+	line  52:      unnamed       unused   input  active-high
+	line  53:      unnamed       unused   input  active-high
+	line  54:      unnamed       unused   input  active-high
+	line  55: "BIOS_SMI_ACTIVE" unused input active-high
+	line  56: "LED_POST_CODE_0" unused output active-high
+	line  57: "LED_POST_CODE_1" unused output active-high
+	line  58: "LED_POST_CODE_2" unused output active-high
+	line  59: "LED_POST_CODE_3" unused output active-high
+	line  60: "LED_POST_CODE_4" unused output active-high
+	line  61: "LED_POST_CODE_5" unused output active-high
+	line  62: "LED_POST_CODE_6" unused output active-high
+	line  63: "LED_POST_CODE_7" unused output active-high
+	line  64: "CPU0_FIVR_FAULT_LVT3" unused input active-high
+	line  65: "CPU1_FIVR_FAULT_LVT3" unused input active-high
+	line  66:  "FORCE_ADR"       unused  output  active-high
+	line  67: "UV_ADR_TRIGGER_EN" unused output active-high
+	line  68:      unnamed       unused   input  active-high
+	line  69:      unnamed       unused   input  active-high
+	line  70:      unnamed       unused   input  active-high
+	line  71:      unnamed       unused   input  active-high
+	line  72:      unnamed       unused   input  active-high
+	line  73:      unnamed       unused   input  active-high
+	line  74:      unnamed       unused   input  active-high
+	line  75:      unnamed       unused   input  active-high
+	line  76:      unnamed       unused   input  active-high
+	line  77:      unnamed       unused   input  active-high
+	line  78:      unnamed       unused   input  active-high
+	line  79:      unnamed       unused   input  active-high
+	line  80:      unnamed       kernel   input  active-high [used]
+	line  81:      unnamed       kernel   input  active-high [used]
+	line  82:      unnamed       kernel   input  active-high [used]
+	line  83:      unnamed       kernel   input  active-high [used]
+	line  84:      unnamed       kernel   input  active-high [used]
+	line  85:      unnamed       kernel   input  active-high [used]
+	line  86:      unnamed       kernel   input  active-high [used]
+	line  87:      unnamed       kernel   input  active-high [used]
+	line  88: "IRQ_UV_DETECT" unused input active-high
+	line  89: "IRQ_OC_DETECT" unused input active-high
+	line  90: "HSC_TIMER_EXP" unused input active-high
+	line  91:      unnamed       unused   input  active-high
+	line  92: "MEM_THERM_EVENT_PCH" unused input active-high
+	line  93: "PMBUS_ALERT_BUF_EN" unused output active-high
+	line  94:      unnamed       kernel   input  active-high [used]
+	line  95:      unnamed       kernel   input  active-high [used]
+	line  96: "CPU0_RC_ERROR" unused input active-high
+	line  97: "CPU1_RC_ERROR" unused input active-high
+	line  98:      unnamed       unused   input  active-high
+	line  99: "OC_DETECT_EN" unused output active-high
+	line 100: "CPU0_THERMTRIP_LATCH_LVT3" unused input active-high
+	line 101: "CPU1_THERMTRIP_LATCH_LVT3" unused input active-high
+	line 102:      unnamed       unused   input  active-high
+	line 103:      unnamed       unused   input  active-high
+	line 104:      unnamed       kernel   input  active-high [used]
+	line 105:      unnamed       kernel   input  active-high [used]
+	line 106:      unnamed       unused   input  active-high
+	line 107: "CPU_MSMI_LVT3" unused input active-high
+	line 108:      unnamed       unused   input  active-high
+	line 109: "BIOS_SPI_BMC_CTRL" unused input active-high
+	line 110:      unnamed       unused   input  active-high
+	line 111:      unnamed       unused   input  active-high
+	line 112:      unnamed       unused   input  active-high
+	line 113:      unnamed       unused   input  active-high
+	line 114:      unnamed       unused   input  active-high
+	line 115:      unnamed       unused   input  active-high
+	line 116:      unnamed       unused   input  active-high
+	line 117:      unnamed       unused   input  active-high
+	line 118:      unnamed       unused   input  active-high
+	line 119:      unnamed       unused   input  active-high
+	line 120: "BOARD_SKU_ID0" unused input active-high
+	line 121: "BOARD_SKU_ID1" unused input active-high
+	line 122: "BOARD_SKU_ID2" unused input active-high
+	line 123: "BOARD_SKU_ID3" unused input active-high
+	line 124: "BOARD_SKU_ID4" unused input active-high
+	line 125:   "BMC_PREQ"       unused  output  active-high
+	line 126: "BMC_PWR_DEBUG" unused input active-high
+	line 127: "RST_RSMRST"       unused   input  active-high
+	line 128:      unnamed       kernel   input  active-high [used]
+	line 129:      unnamed       kernel   input  active-high [used]
+	line 130:      unnamed       kernel   input  active-high [used]
+	line 131:      unnamed       kernel   input  active-high [used]
+	line 132: "UARTSW_LSB"       unused   input  active-high
+	line 133: "UARTSW_MSB"       unused   input  active-high
+	line 134: "POST_CARD_PRES_BMC" unused input active-high
+	line 135: "PE_BMC_WAKE" unused input active-high
+	line 136:      unnamed       unused   input  active-high
+	line 137:      unnamed       unused   input  active-high
+	line 138: "BMC_TCK_MUX_SEL" unused input active-high
+	line 139:   "BMC_PRDY"       unused   input  active-high
+	line 140: "BMC_XDP_PRSNT_IN" unused input active-high
+	line 141: "RST_BMC_PLTRST_BUF" unused input active-high
+	line 142:   "SLT_CFG0"       unused   input  active-high
+	line 143:   "SLT_CFG1"       unused   input  active-high
+	line 144:   "THROTTLE"       unused   input  active-high
+	line 145:  "BMC_READY"       unused  output  active-high
+	line 146:      unnamed       unused   input  active-high
+	line 147: "HSC_SMBUS_SWITCH_EN" unused input active-high
+	line 148:      unnamed       unused   input  active-high
+	line 149:      unnamed       unused   input  active-high
+	line 150:      unnamed       unused   input  active-high
+	line 151:      unnamed       unused   input  active-high
+	line 152:      unnamed       kernel   input  active-high [used]
+	line 153:      unnamed       kernel   input  active-high [used]
+	line 154:      unnamed       kernel   input  active-high [used]
+	line 155:      unnamed       kernel   input  active-high [used]
+	line 156:      unnamed       unused   input  active-high
+	line 157:      unnamed       unused   input  active-high
+	line 158:      unnamed       kernel   input  active-high [used]
+	line 159:      unnamed       kernel   input  active-high [used]
+	line 160:      unnamed       kernel   input  active-high [used]
+	line 161:      unnamed       kernel   input  active-high [used]
+	line 162:      unnamed       unused   input  active-high
+	line 163:      unnamed       unused   input  active-high
+	line 164:      unnamed       kernel   input  active-high [used]
+	line 165:  "BMC_FAULT"       unused  output  active-high
+	line 166:      unnamed       kernel   input  active-high [used]
+	line 167:      unnamed       kernel   input  active-high [used]
+	line 168:      unnamed       kernel   input  active-high [used]
+	line 169:      unnamed       kernel   input  active-high [used]
+	line 170:      unnamed       kernel   input  active-high [used]
+	line 171: "FAST_PROCHOT_EN" unused output active-high
+	line 172:      unnamed       kernel   input  active-high [used]
+	line 173:      unnamed       kernel   input  active-high [used]
+	line 174:      unnamed       kernel   input  active-high [used]
+	line 175:      unnamed       kernel   input  active-high [used]
+	line 176:      unnamed       unused   input  active-high
+	line 177:      unnamed       unused   input  active-high
+	line 178:      unnamed       unused   input  active-high
+	line 179:      unnamed       unused   input  active-high
+	line 180:      unnamed       unused   input  active-high
+	line 181:      unnamed       unused   input  active-high
+	line 182:      unnamed       unused   input  active-high
+	line 183:      unnamed       unused   input  active-high
+	line 184:      unnamed       unused   input  active-high
+	line 185:      unnamed       unused   input  active-high
+	line 186:      unnamed       unused   input  active-high
+	line 187: "GLOBAL_RST_WARN" unused input active-high
+	line 188: "CPU0_MEMABC_MEMHOT_LVT3_BMC" unused input active-high
+	line 189: "CPU0_MEMDEF_MEMHOT_LVT3_BMC" unused input active-high
+	line 190: "CPU1_MEMGHJ_MEMHOT_LVT3_BMC" unused input active-high
+	line 191: "CPU1_MEMKLM_MEMHOT_LVT3_BMC" unused input active-high
+	line 192:     "SIO_S3"       unused   input  active-high
+	line 193:     "SIO_S5"       unused   input  active-high
+	line 194: "BMC_JTAG_SEL" unused output active-high
+	line 195: "SIO_ONCONTROL" unused input active-high
+	line 196:      unnamed       unused   input  active-high
+	line 197:      unnamed       unused   input  active-high
+	line 198:      unnamed       unused   input  active-high
+	line 199:      unnamed       unused   input  active-high
+	line 200:      unnamed       unused   input  active-high
+	line 201: "SIO_POWER_GOOD" unused input active-high
+	line 202: "IRQ_PVDDQ_DEF_VRHOT_LVT3" unused input active-high
+	line 203:      unnamed       unused   input  active-high
+	line 204:      unnamed       unused   input  active-high
+	line 205:      unnamed       unused   input  active-high
+	line 206:      unnamed       unused   input  active-high
+	line 207:      unnamed       unused   input  active-high
+	line 208: "CPU1_SKTOCC_LVT3" unused input active-high
+	line 209: "IRQ_SML1_PMBUS_ALERT" unused input active-high
+	line 210: "SERVER_POWER_LED" unused output active-high
+	line 211:      unnamed       unused   input  active-high
+	line 212: "PECI_MUX_SELECT" unused output active-high
+	line 213: "UV_HIGH_SET" unused input active-high
+	line 214:      unnamed       unused   input  active-high
+	line 215:      unnamed "power-control" input active-high [used]
+	line 216: "IRQ_HSC_FAULT" unused input active-high
+	line 217: "OCP_MEZZA_PRES" unused input active-high
+	line 218:      unnamed       unused   input  active-high
+	line 219:      unnamed       unused   input  active-high
+	line 220:      unnamed       unused  output  active-high
+	line 221:      unnamed       unused  output  active-high
+	line 222:      unnamed       unused  output  active-high
+	line 223:      unnamed       unused  output  active-high
+	line 224:      unnamed       unused   input  active-high
+	line 225:      unnamed       unused   input  active-high
+	line 226:      unnamed       unused   input  active-high
+	line 227:      unnamed       unused   input  active-high
+	line 228:      unnamed       unused   input  active-high
+	line 229:      unnamed       unused   input  active-high
+	line 230:      unnamed       unused   input  active-high
+	line 231:      unnamed       unused   input  active-high

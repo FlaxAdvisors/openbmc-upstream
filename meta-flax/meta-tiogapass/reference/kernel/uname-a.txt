@@ -1,0 +1,2 @@
+# uname -a
+Linux tiogapass 5.4.53-INVALID-dirty-f58a734 #1 Tue Jan 20 19:55:32 UTC 2026 armv6l GNU/Linux
