@@ -161,6 +161,9 @@
                 },
                 "Type": {
                     "$ref": "#/definitions/Types/Type"
+                },
+                "Unit": {
+                    "$ref": "#/definitions/Types/Unit"
                 }
             },
             "required": [
@@ -406,6 +409,9 @@
                 "type": "array"
             },
             "Type": {
+                "type": "string"
+            },
+            "Unit": {
                 "type": "string"
             }
         }

@@ -800,7 +800,8 @@
             "Name": "MB_HSC_TEMP",
             "OffsetValue": -759.0476,
             "ScaleValue": 0.238,
-            "Type": "IpmbSensor"
+            "Type": "IpmbSensor",
+            "Unit": "xyz.openbmc_project.Sensor.Value.Unit.DegreesC"
         },
         {
             "Address": "0x8a",
@@ -817,7 +818,8 @@
                     "Value": 52.8
                 }
             ],
-            "Type": "IpmbSensor"
+            "Type": "IpmbSensor",
+            "Unit": "xyz.openbmc_project.Sensor.Value.Unit.Amperes"
         },
         {
             "Address": "0x29",
@@ -834,7 +836,8 @@
                     "Value": 792
                 }
             ],
-            "Type": "IpmbSensor"
+            "Type": "IpmbSensor",
+            "Unit": "xyz.openbmc_project.Sensor.Value.Unit.Watts"
         },
         {
             "Address": "0x2a",
@@ -857,7 +860,8 @@
                     "Value": 10.8
                 }
             ],
-            "Type": "IpmbSensor"
+            "Type": "IpmbSensor",
+            "Unit": "xyz.openbmc_project.Sensor.Value.Unit.Volts"
         },
         {
             "Address": "0x4e",

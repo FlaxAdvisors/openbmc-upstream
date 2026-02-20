@@ -5,6 +5,9 @@ SRC_URI:append = " \
     "
 
 do_install:append() {
+     # Remove upstream Meta/Facebook platform configs installed by Meson
+     rm -rf ${D}${datadir}/entity-manager/configurations/meta
+
      install -d ${D}${datadir}/entity-manager/configurations
      install -d ${D}${datadir}/entity-manager/configurations/schemas
      install -m 0444 ${UNPACKDIR}/blacklist.json ${D}${datadir}/entity-manager/blacklist.json
