@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Set initial GPIO states using libgpiod named lines from device tree.
+
+# FM_BMC_READY_N (S1) — active low, drive low to assert ready
+gpioset gpiochip0 BMC_READY=0
+
+# FP_PECI_MUX (AA4) — drive high to select BMC PECI path
+gpioset gpiochip0 PECI_MUX_SELECT=1
+
+exit 0

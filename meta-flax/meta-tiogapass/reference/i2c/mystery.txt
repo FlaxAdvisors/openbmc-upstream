@@ -1,0 +1,123 @@
+# Bus 3: 0x08, 0x44, 0x6c — try reading ID registers
+#root@tiogapass:~# i2cget -f -y 3 0x44 0x0f           # TMP75 has ID at 0x0f
+0x26
+#root@tiogapass:~# i2cget -f -y 3 0x6c 0xff           # manufacturer ID reg
+0x00
+#root@tiogapass:~# i2cdump -f -y 3 0x08               # raw dump of unknown device
+No size specified (using byte-data access)
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f    0123456789abcdef
+00: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+10: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+20: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+30: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+40: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+50: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+60: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+70: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+80: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+90: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+a0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+b0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+c0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+d0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+e0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+f0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+#root@tiogapass:~# i2cdump -f -y 3 0x6c
+No size specified (using byte-data access)
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f    0123456789abcdef
+00: 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08    ????????????????
+10: 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08    ????????????????
+20: 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08    ????????????????
+30: 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08    ????????????????
+40: 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08    ????????????????
+50: 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08    ????????????????
+60: 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08    ????????????????
+70: 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08    ????????????????
+80: c7 ff 0f 00 00 01 e7 08 00 00 00 00 00 00 00 00    ?.?..???........
+90: 00 00 00 00 00 00 00 00 5f c1 04 03 00 00 ff 00    ........_???....
+a0: c7 ff 0f 00 00 01 e7 08 00 00 00 00 00 00 00 00    ?.?..???........
+b0: 00 00 00 00 00 00 00 00 5f c1 04 03 00 00 ff 00    ........_???....
+c0: c7 ff 0f 00 00 01 e7 08 00 00 00 00 00 00 00 00    ?.?..???........
+d0: 00 00 00 00 00 00 00 00 5f c1 04 03 00 00 ff 00    ........_???....
+e0: c7 ff 0f 00 00 01 e7 08 00 00 00 00 00 00 00 00    ?.?..???........
+f0: 00 00 00 00 00 00 00 00 5f c1 04 03 00 00 ff 00    ........_???....
+
+# Bus 2: mux at 0x70, unknowns at 0x10, 0x16
+#root@tiogapass:~# i2cdump -f -y 2 0x70               # identify mux type (PCA9548 vs PCA9546)
+No size specified (using byte-data access)
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f    0123456789abcdef
+00: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+10: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+20: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+30: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+40: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+50: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+60: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+70: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+80: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+90: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+a0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+b0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+c0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+d0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+e0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+f0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+#root@tiogapass:~# i2cdump -f -y 2 0x10
+No size specified (using byte-data access)
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f    0123456789abcdef
+00: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+10: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+20: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+30: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+40: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+50: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+60: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+70: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+80: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+90: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+a0: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+b0: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+c0: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+d0: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+e0: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+f0: 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21    !!!!!!!!!!!!!!!!
+#root@tiogapass:~# i2cdump -f -y 2 0x16
+No size specified (using byte-data access)
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f    0123456789abcdef
+00: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+10: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+20: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+30: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+40: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+50: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+60: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+70: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+80: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+90: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+a0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+b0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+c0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+d0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+e0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+f0: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+
+# Bus 9: 0x27
+#root@tiogapass:~# i2cdump -f -y 9 0x27               # PCF8574 GPIO expander?
+No size specified (using byte-data access)
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f    0123456789abcdef
+00: 92 ff ff ff 00 00 ff ff XX XX XX XX XX XX XX XX    ?.......XXXXXXXX
+10: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+20: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+30: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+40: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+50: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+60: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+70: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+80: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+90: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+a0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+b0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+c0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+d0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+e0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX
+f0: XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX    XXXXXXXXXXXXXXXX

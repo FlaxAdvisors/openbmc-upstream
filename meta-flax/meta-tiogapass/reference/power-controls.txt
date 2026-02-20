@@ -1,0 +1,26 @@
+#root@tiogapass:~# cat /etc/default/obmc/gpio/*  2>/dev/null
+
+#root@tiogapass:~# find /usr/share/x86-power-control -name "*.json" -exec cat {} \;
+{
+  "PostComplete": "POST_COMPLETE",
+  "PwrButton": "POWER_BUTTON",
+  "PwrOK": "PS_PWROK",
+  "PwrOut": "POWER_OUT",
+  "RstButton": "RESET_BUTTON",
+  "RstOut": "RESET_OUT"
+}
+
+#root@tiogapass:~# systemctl cat xyz.openbmc_project.Chassis.Control.Power.service
+# /lib/systemd/system/xyz.openbmc_project.Chassis.Control.Power.service
+[Unit]
+Description=Intel Power Control
+
+[Service]
+Restart=always
+RestartSec=3
+ExecStart=/usr/bin/power-control
+Type=dbus
+BusName=xyz.openbmc_project.State.Host
+
+[Install]
+WantedBy=sysinit.target

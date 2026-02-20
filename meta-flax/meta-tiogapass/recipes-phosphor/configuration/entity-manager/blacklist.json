@@ -1,0 +1,9 @@
+{
+    "buses": [],
+    "components": [
+        {
+            "BUS": 0,
+            "ADDRESS": 80
+        }
+    ]
+}

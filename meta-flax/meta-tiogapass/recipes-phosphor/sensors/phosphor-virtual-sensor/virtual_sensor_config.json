@@ -1,0 +1,32 @@
+[
+    {
+        "Desc": {
+            "Name": "Virtual_Inlet_Temp",
+            "SensorType": "temperature"
+        },
+        "Threshold": {
+            "CriticalHigh": 90,
+            "CriticalLow": 0,
+            "WarningHigh": 70,
+            "WarningLow": 5
+        },
+        "Params": {
+            "ConstParam": [
+                {
+                    "ParamName": "P1",
+                    "Value": 1.0
+                }
+            ],
+            "DbusParam": [
+                {
+                    "ParamName": "P2",
+                    "Desc": {
+                        "Name": "MB_INLET_TEMP",
+                        "SensorType": "temperature"
+                    }
+                }
+            ]
+        },
+        "Expression": "P1 * P2"
+    }
+]

@@ -1,0 +1,1774 @@
+root@tiogapass:~# for x in /sys/kernel/debug/pinctrl/1e6e2000.syscon\:pinctrl-aspeed-g5-pinctrl/*; do echo "===== $(basename $x) ====="; cat $x; done
+===== gpio-ranges =====
+GPIO ranges handled:
+0: 1e780000.gpio GPIOS [0 - 231] PINS [0 - 231]
+===== pinconf-groups =====
+Pin config settings per pin group
+Format: group (name): configs
+0 (ACPI): input bias pull down
+1 (ADC0): input bias disabled
+2 (ADC1): input bias disabled
+3 (ADC10): input bias disabled
+4 (ADC11): input bias disabled
+5 (ADC12): input bias disabled
+6 (ADC13): input bias disabled
+7 (ADC14): input bias disabled
+8 (ADC15): input bias disabled
+9 (ADC2): input bias disabled
+10 (ADC3): input bias disabled
+11 (ADC4): input bias disabled
+12 (ADC5): input bias disabled
+13 (ADC6): input bias disabled
+14 (ADC7): input bias disabled
+15 (ADC8): input bias disabled
+16 (ADC9): input bias disabled
+17 (BMCINT): input bias pull down
+18 (DDCCLK): input bias pull down
+19 (DDCDAT): input bias pull down
+20 (ESPI): input bias pull down
+21 (FWSPICS1): input bias disabled
+22 (FWSPICS2): input bias disabled
+23 (GPID0): input bias pull down
+24 (GPID2): input bias pull down
+25 (GPID4): input bias pull down
+26 (GPID6): input bias pull down
+27 (GPIE0): input bias pull down
+28 (GPIE2): input bias pull down
+29 (GPIE4): input bias pull down
+30 (GPIE6): input bias pull down
+31 (I2C10): input bias pull down
+32 (I2C11): input bias pull down
+33 (I2C12): input bias pull down
+34 (I2C13): input bias pull down
+35 (I2C14): input bias pull down
+36 (I2C3): input bias pull down
+37 (I2C4): input bias pull down
+38 (I2C5): input bias pull down
+39 (I2C6): input bias pull down
+40 (I2C7): input bias pull down
+41 (I2C8): input bias pull down
+42 (I2C9): input bias pull down
+43 (LAD0): input bias pull down
+44 (LAD1): input bias pull down
+45 (LAD2): input bias pull down
+46 (LAD3): input bias pull down
+47 (LCLK): input bias pull down
+48 (LFRAME): input bias pull down
+49 (LPCHC): input bias pull down
+50 (LPCPD): input bias disabled
+51 (LPCPLUS): input bias pull down
+52 (LPCPME): input bias disabled
+53 (LPCRST): input bias pull down
+54 (LPCSMI): input bias disabled
+55 (LSIRQ): input bias pull down
+56 (MAC1LINK): input bias pull down
+57 (MAC2LINK): input bias pull down
+58 (MDIO1): input bias disabled
+59 (MDIO2): input bias pull down
+60 (NCTS1): input bias pull down
+61 (NCTS2): input bias pull down
+62 (NCTS3): input bias pull down
+63 (NCTS4): input bias pull down
+64 (NDCD1): input bias pull down
+65 (NDCD2): input bias pull down
+66 (NDCD3): input bias pull down
+67 (NDCD4): input bias pull down
+68 (NDSR1): input bias pull down
+69 (NDSR2): input bias pull down
+70 (NDSR3): input bias pull down
+71 (NDSR4): input bias pull down
+72 (NDTR1): input bias pull down
+73 (NDTR2): input bias pull down
+74 (NDTR3): input bias pull down
+75 (NDTR4): input bias pull down
+76 (NRI1): input bias pull down
+77 (NRI2): input bias pull down
+78 (NRI3): input bias pull down
+79 (NRI4): input bias pull down
+80 (NRTS1): input bias pull down
+81 (NRTS2): input bias pull down
+82 (NRTS3): input bias pull down
+83 (NRTS4): input bias pull down
+84 (OSCCLK): input bias pull down
+85 (PEWAKE): input bias pull down
+86 (PNOR): input bias pull down
+87 (PWM0): input bias pull down
+88 (PWM1): input bias pull down
+89 (PWM2): input bias pull down
+90 (PWM3): input bias pull down
+91 (PWM4): input bias pull down
+92 (PWM5): input bias pull down
+93 (PWM6): input bias pull down
+94 (PWM7): input bias pull down
+95 (RGMII1): input bias pull down
+96 (RGMII2): input bias pull down, output drive strength (8 mA)
+97 (RMII1): input bias pull down
+98 (RMII2): input bias pull down, output drive strength (8 mA)
+99 (RXD1): input bias pull down
+100 (RXD2): input bias pull down
+101 (RXD3): input bias pull down
+102 (RXD4): input bias pull down
+103 (SALT1): input bias pull down
+104 (SALT10): input bias pull down
+105 (SALT11): input bias pull down
+106 (SALT12): input bias pull down
+107 (SALT13): input bias pull down
+108 (SALT14): input bias pull down
+109 (SALT2): input bias pull down
+110 (SALT3): input bias pull down
+111 (SALT4): input bias pull down
+112 (SALT5): input bias pull down
+113 (SALT6): input bias pull down
+114 (SALT7): input bias pull down
+115 (SALT8): input bias pull down
+116 (SALT9): input bias pull down
+117 (SCL1): input bias pull down
+118 (SCL2): input bias pull down
+119 (SD1): input bias pull down
+120 (SD2): input bias pull down
+121 (SDA1): input bias pull down
+122 (SDA2): input bias pull down
+123 (SGPM): input bias pull down
+124 (SGPS1): input bias pull down
+125 (SGPS2): input bias pull down
+126 (SIOONCTRL): input bias pull down
+127 (SIOPBI): input bias pull down
+128 (SIOPBO): input bias pull down
+129 (SIOPWREQ): input bias pull down
+130 (SIOPWRGD): input bias pull down
+131 (SIOS3): input bias pull down
+132 (SIOS5): input bias pull down
+133 (SIOSCI): input bias pull down
+134 (SPI1): input bias pull down
+135 (SPI1CS1): input bias pull down
+136 (SPI1DEBUG): input bias pull down
+137 (SPI1PASSTHRU): input bias pull down
+138 (SPI2CK): input bias disabled
+139 (SPI2CS0): input bias disabled
+140 (SPI2CS1): input bias pull down
+141 (SPI2MISO): input bias disabled
+142 (SPI2MOSI): input bias disabled
+143 (TIMER3): input bias pull down
+144 (TIMER4): input bias pull down
+145 (TIMER5): input bias pull down
+146 (TIMER6): input bias pull down
+147 (TIMER7): input bias pull down
+148 (TIMER8): input bias pull down
+149 (TXD1): input bias pull down
+150 (TXD2): input bias pull down
+151 (TXD3): input bias pull down
+152 (TXD4): input bias pull down
+153 (UART6): input bias pull down
+154 (USB11BHID):
+155 (USB2AD):
+156 (USB2AH):
+157 (USB2BD):
+158 (USB2BH):
+159 (USBCKI): input bias disabled
+160 (VGABIOSROM): input bias pull down
+161 (VGAHS): input bias pull down
+162 (VGAVS): input bias pull down
+163 (VPI24): input bias pull down
+164 (VPO): input bias pull down
+165 (WDTRST1): input bias pull down
+166 (WDTRST2): input bias pull down
+===== pinconf-pins =====
+Pin config settings per pin
+Format: pin (name): configs
+pin 0 (B14): input bias pull down
+pin 1 (D14): input bias pull down
+pin 2 (D13): input bias pull down
+pin 3 (E13): input bias pull down
+pin 4 (C14): input bias pull down
+pin 5 (A13): input bias pull down
+pin 6 (C13): input bias pull down
+pin 7 (B13): input bias pull down
+pin 8 (K19): input bias disabled
+pin 9 (L19): input bias disabled
+pin 10 (L18): input bias disabled
+pin 11 (K18): input bias disabled
+pin 12 (J20): input bias disabled
+pin 13 (H21): input bias disabled
+pin 14 (H22): input bias disabled
+pin 15 (H20): input bias disabled
+pin 16 (C12): input bias pull down
+pin 17 (A12): input bias pull down
+pin 18 (B12): input bias pull down
+pin 19 (D9): input bias pull down
+pin 20 (D10): input bias pull down
+pin 21 (E12): input bias pull down
+pin 22 (C11): input bias pull down
+pin 23 (B11): input bias pull down
+pin 24 (F19): input bias pull down
+pin 25 (E21): input bias pull down
+pin 26 (F20): input bias pull down
+pin 27 (D20): input bias pull down
+pin 28 (D21): input bias pull down
+pin 29 (E20): input bias pull down
+pin 30 (G18): input bias pull down
+pin 31 (C21): input bias pull down
+pin 32 (B20): input bias pull down
+pin 33 (C20): input bias pull down
+pin 34 (F18): input bias pull down
+pin 35 (F17): input bias pull down
+pin 36 (E18): input bias pull down
+pin 37 (D19): input bias pull down
+pin 38 (A20): input bias pull down
+pin 39 (B19): input bias pull down
+pin 40 (J19): input bias pull down
+pin 41 (J18): input bias pull down
+pin 42 (B22): input bias pull down
+pin 43 (B21): input bias pull down
+pin 44 (A21): input bias pull down
+pin 45 (H19): input bias pull down
+pin 46 (G17): input bias pull down
+pin 47 (H18): input bias pull down
+pin 48 (A19): input bias pull down
+pin 49 (E19): input bias pull down
+pin 50 (C19): input bias pull down
+pin 51 (E16): input bias pull down
+pin 52 (E17): input bias pull down
+pin 53 (D16): input bias pull down
+pin 54 (D15): input bias pull down
+pin 55 (E14): input bias pull down
+pin 56 (A18): input bias pull down
+pin 57 (B18): input bias pull down
+pin 58 (D17): input bias pull down
+pin 59 (C17): input bias pull down
+pin 60 (A17): input bias pull down
+pin 61 (B17): input bias pull down
+pin 62 (A16): input bias pull down
+pin 63 (D18): input bias pull down
+pin 64 (C18): input bias pull down
+pin 65 (E15): input bias pull down
+pin 66 (B16): input bias pull down
+pin 67 (C16): input bias pull down
+pin 68 (B15): input bias pull down
+pin 69 (C15): input bias pull down
+pin 70 (A14): input bias pull down
+pin 71 (A15): input bias pull down
+pin 72 (R2): input bias pull down
+pin 73 (L2): input bias pull down
+pin 74 (N3): input bias pull down
+pin 75 (N4): input bias pull down
+pin 76 (N5): input bias pull down
+pin 77 (R4): input bias pull down
+pin 78 (R3): input bias pull down
+pin 79 (T3): input bias pull down
+pin 80 (L3): input bias pull down
+pin 81 (L4): input bias pull down
+pin 82 (L1): input bias pull down
+pin 83 (N2): input bias pull down
+pin 84 (N1): input bias pull down
+pin 85 (P1): input bias pull down
+pin 86 (P2): input bias pull down
+pin 87 (R1): input bias pull down
+pin 88 (T2): input bias pull down
+pin 89 (T1): input bias pull down
+pin 90 (U1): input bias pull down
+pin 91 (U2): input bias pull down
+pin 92 (P4): input bias pull down
+pin 93 (P3): input bias pull down
+pin 94 (V1): input bias pull down
+pin 95 (W1): input bias pull down
+pin 96 (Y1): input bias pull down
+pin 97 (AB2): input bias pull down
+pin 98 (AA1): input bias pull down
+pin 99 (Y2): input bias pull down
+pin 100 (AA2): input bias pull down
+pin 101 (P5): input bias pull down
+pin 102 (R5): input bias pull down
+pin 103 (T5): input bias pull down
+pin 104 (V2): input bias pull down
+pin 105 (W2): input bias pull down
+pin 106 (V3): input bias pull down
+pin 107 (U3): input bias pull down
+pin 108 (W3): input bias pull down
+pin 109 (AA3): input bias pull down
+pin 110 (Y3): input bias pull down
+pin 111 (T4): input bias pull down
+pin 112 (U5): input bias pull down
+pin 113 (U4): input bias pull down
+pin 114 (V5): input bias pull down
+pin 115 (AB4): input bias pull down
+pin 116 (AB3): input bias pull down
+pin 117 (Y4): input bias pull down
+pin 118 (AA4): input bias pull down
+pin 119 (W4): input bias pull down
+pin 120 (V4): input bias pull down
+pin 121 (W5): input bias pull down
+pin 122 (AA5): input bias pull down
+pin 123 (AB5): input bias pull down
+pin 124 (Y6): input bias pull down
+pin 125 (Y5): input bias pull down
+pin 126 (W6): input bias pull down
+pin 127 (V6): input bias pull down
+pin 128 (A11): input bias pull down
+pin 129 (A10): input bias pull down
+pin 130 (A9): input bias pull down
+pin 131 (B9): input bias pull down
+pin 132 (N21): input bias pull down
+pin 133 (N22): input bias pull down
+pin 134 (B10): input bias pull down
+pin 135 (N20): input bias pull down
+pin 136 (AA19): input bias disabled
+pin 137 (T19): input bias disabled
+pin 138 (T17): input bias disabled
+pin 139 (Y19): input bias disabled
+pin 140 (W19): input bias disabled
+pin 141 (V19): input bias disabled
+pin 142 (D8): input bias disabled
+pin 143 (E10): input bias disabled
+pin 144 (V20): input bias pull down
+pin 145 (U19): input bias pull down
+pin 146 (R18): input bias pull down
+pin 147 (P18): input bias pull down
+pin 148 (R19): input bias pull down
+pin 149 (W20): input bias pull down
+pin 150 (U20): input bias pull down
+pin 151 (AA20): input bias pull down
+pin 152 (B5): input bias pull down, output drive strength (8 mA)
+pin 153 (E9): input bias pull down, output drive strength (8 mA)
+pin 154 (F9): input bias pull down, output drive strength (8 mA)
+pin 155 (A5): input bias pull down, output drive strength (8 mA)
+pin 156 (E7): input bias pull down
+pin 157 (D7): input bias pull down
+pin 158 (B2): input bias pull down, output drive strength (8 mA)
+pin 159 (B1): input bias pull down, output drive strength (8 mA)
+pin 160 (A2): input bias pull down, output drive strength (8 mA)
+pin 161 (B3): input bias pull down, output drive strength (8 mA)
+pin 162 (D5): input bias pull down
+pin 163 (D4): input bias pull down
+pin 164 (B4): input bias pull down
+pin 165 (A4): input bias pull down
+pin 166 (A3): input bias pull down
+pin 167 (D6): input bias pull down
+pin 168 (C5): input bias pull down
+pin 169 (C4): input bias pull down
+pin 170 (C2): input bias pull down
+pin 171 (C1): input bias pull down
+pin 172 (C3): input bias pull down
+pin 173 (D1): input bias pull down
+pin 174 (D2): input bias pull down
+pin 175 (E6): input bias pull down
+pin 176 (F4): input bias disabled
+pin 177 (F5): input bias disabled
+pin 178 (E2): input bias disabled
+pin 179 (E1): input bias disabled
+pin 180 (F3): input bias disabled
+pin 181 (E3): input bias disabled
+pin 182 (G5): input bias disabled
+pin 183 (G4): input bias disabled
+pin 184 (F2): input bias disabled
+pin 185 (G3): input bias disabled
+pin 186 (G2): input bias disabled
+pin 187 (F1): input bias disabled
+pin 188 (H5): input bias disabled
+pin 189 (G1): input bias disabled
+pin 190 (H3): input bias disabled
+pin 191 (H4): input bias disabled
+pin 192 (R22): input bias pull down
+pin 193 (R21): input bias pull down
+pin 194 (P22): input bias pull down
+pin 195 (P21): input bias pull down
+pin 196 (M18): input bias pull down
+pin 197 (M19): input bias pull down
+pin 198 (M20): input bias pull down
+pin 199 (P20): input bias pull down
+pin 200 (Y20): input bias pull down
+pin 201 (AB20): input bias pull down
+pin 202 (AB21): input bias pull down
+pin 203 (AA21): input bias pull down
+pin 204 (U21): input bias pull down
+pin 205 (W22): input bias pull down
+pin 206 (V22): input bias pull down
+pin 207 (W21): input bias pull down
+pin 208 (Y21): input bias pull down
+pin 209 (V21): input bias pull down
+pin 210 (Y22): input bias pull down
+pin 211 (AA22): input bias pull down
+pin 212 (U22): input bias pull down
+pin 213 (T20): input bias pull down
+pin 214 (N18): input bias pull down
+pin 215 (P19): input bias pull down
+pin 216 (N19): input bias pull down
+pin 217 (T21): input bias pull down
+pin 218 (T22): input bias pull down
+pin 219 (R20): input bias pull down
+pin 220 (PIN220):
+pin 221 (PIN221):
+pin 222 (PIN222):
+pin 223 (PIN223):
+pin 224 (G21): input bias pull down
+pin 225 (G20): input bias pull down
+pin 226 (D22): input bias pull down
+pin 227 (E22): input bias pull down
+pin 228 (C22): input bias pull down
+pin 229 (F21): input bias pull down
+pin 230 (F22): input bias pull down
+pin 231 (G22): input bias pull down
+pin 232 (A7):
+pin 233 (A8):
+pin 234 (B6):
+pin 235 (A6):
+===== pingroups =====
+registered pin groups:
+group: ACPI
+pin 192 (R22)
+pin 193 (R21)
+pin 194 (P22)
+pin 195 (P21)
+pin 200 (Y20)
+pin 201 (AB20)
+pin 202 (AB21)
+pin 203 (AA21)
+
+group: ADC0
+pin 176 (F4)
+
+group: ADC1
+pin 177 (F5)
+
+group: ADC10
+pin 186 (G2)
+
+group: ADC11
+pin 187 (F1)
+
+group: ADC12
+pin 188 (H5)
+
+group: ADC13
+pin 189 (G1)
+
+group: ADC14
+pin 190 (H3)
+
+group: ADC15
+pin 191 (H4)
+
+group: ADC2
+pin 178 (E2)
+
+group: ADC3
+pin 179 (E1)
+
+group: ADC4
+pin 180 (F3)
+
+group: ADC5
+pin 181 (E3)
+
+group: ADC6
+pin 182 (G5)
+
+group: ADC7
+pin 183 (G4)
+
+group: ADC8
+pin 184 (F2)
+
+group: ADC9
+pin 185 (G3)
+
+group: BMCINT
+pin 145 (U19)
+
+group: DDCCLK
+pin 78 (R3)
+
+group: DDCDAT
+pin 79 (T3)
+
+group: ESPI
+pin 224 (G21)
+pin 225 (G20)
+pin 226 (D22)
+pin 227 (E22)
+pin 228 (C22)
+pin 229 (F21)
+pin 230 (F22)
+pin 231 (G22)
+
+group: FWSPICS1
+pin 136 (AA19)
+
+group: FWSPICS2
+pin 137 (T19)
+
+group: GPID0
+pin 24 (F19)
+pin 25 (E21)
+
+group: GPID2
+pin 26 (F20)
+pin 27 (D20)
+
+group: GPID4
+pin 28 (D21)
+pin 29 (E20)
+
+group: GPID6
+pin 30 (G18)
+pin 31 (C21)
+
+group: GPIE0
+pin 32 (B20)
+pin 33 (C20)
+
+group: GPIE2
+pin 34 (F18)
+pin 35 (F17)
+
+group: GPIE4
+pin 36 (E18)
+pin 37 (D19)
+
+group: GPIE6
+pin 38 (A20)
+pin 39 (B19)
+
+group: I2C10
+pin 16 (C12)
+pin 17 (A12)
+
+group: I2C11
+pin 18 (B12)
+pin 19 (D9)
+
+group: I2C12
+pin 20 (D10)
+pin 21 (E12)
+
+group: I2C13
+pin 22 (C11)
+pin 23 (B11)
+
+group: I2C14
+pin 132 (N21)
+pin 133 (N22)
+
+group: I2C3
+pin 128 (A11)
+pin 129 (A10)
+
+group: I2C4
+pin 130 (A9)
+pin 131 (B9)
+
+group: I2C5
+pin 80 (L3)
+pin 81 (L4)
+
+group: I2C6
+pin 82 (L1)
+pin 83 (N2)
+
+group: I2C7
+pin 84 (N1)
+pin 85 (P1)
+
+group: I2C8
+pin 86 (P2)
+pin 87 (R1)
+
+group: I2C9
+pin 4 (C14)
+pin 5 (A13)
+
+group: LAD0
+pin 224 (G21)
+
+group: LAD1
+pin 225 (G20)
+
+group: LAD2
+pin 226 (D22)
+
+group: LAD3
+pin 227 (E22)
+
+group: LCLK
+pin 228 (C22)
+
+group: LFRAME
+pin 229 (F21)
+
+group: LPCHC
+pin 40 (J19)
+pin 41 (J18)
+pin 42 (B22)
+pin 43 (B21)
+pin 44 (A21)
+pin 45 (H19)
+pin 46 (G17)
+pin 47 (H18)
+
+group: LPCPD
+pin 13 (H21)
+
+group: LPCPLUS
+pin 40 (J19)
+pin 41 (J18)
+pin 42 (B22)
+pin 43 (B21)
+pin 44 (A21)
+pin 45 (H19)
+pin 47 (H18)
+
+group: LPCPME
+pin 14 (H22)
+
+group: LPCRST
+pin 231 (G22)
+
+group: LPCSMI
+pin 13 (H21)
+
+group: LSIRQ
+pin 230 (F22)
+
+group: MAC1LINK
+pin 0 (B14)
+
+group: MAC2LINK
+pin 1 (D14)
+
+group: MDIO1
+pin 142 (D8)
+pin 143 (E10)
+
+group: MDIO2
+pin 6 (C13)
+pin 7 (B13)
+
+group: NCTS1
+pin 88 (T2)
+
+group: NCTS2
+pin 96 (Y1)
+
+group: NCTS3
+pin 32 (B20)
+
+group: NCTS4
+pin 40 (J19)
+
+group: NDCD1
+pin 89 (T1)
+
+group: NDCD2
+pin 97 (AB2)
+
+group: NDCD3
+pin 33 (C20)
+
+group: NDCD4
+pin 41 (J18)
+
+group: NDSR1
+pin 90 (U1)
+
+group: NDSR2
+pin 98 (AA1)
+
+group: NDSR3
+pin 34 (F18)
+
+group: NDSR4
+pin 42 (B22)
+
+group: NDTR1
+pin 92 (P4)
+
+group: NDTR2
+pin 100 (AA2)
+
+group: NDTR3
+pin 36 (E18)
+
+group: NDTR4
+pin 44 (A21)
+
+group: NRI1
+pin 91 (U2)
+
+group: NRI2
+pin 99 (Y2)
+
+group: NRI3
+pin 35 (F17)
+
+group: NRI4
+pin 43 (B21)
+
+group: NRTS1
+pin 93 (P3)
+
+group: NRTS2
+pin 101 (P5)
+
+group: NRTS3
+pin 37 (D19)
+
+group: NRTS4
+pin 45 (H19)
+
+group: OSCCLK
+pin 134 (B10)
+
+group: PEWAKE
+pin 135 (N20)
+
+group: PNOR
+pin 200 (Y20)
+pin 201 (AB20)
+pin 202 (AB21)
+pin 203 (AA21)
+pin 204 (U21)
+pin 205 (W22)
+pin 206 (V22)
+pin 207 (W21)
+pin 208 (Y21)
+pin 209 (V21)
+pin 210 (Y22)
+pin 211 (AA22)
+pin 212 (U22)
+pin 213 (T20)
+pin 214 (N18)
+pin 215 (P19)
+pin 216 (N19)
+pin 217 (T21)
+
+group: PWM0
+pin 104 (V2)
+
+group: PWM1
+pin 105 (W2)
+
+group: PWM2
+pin 106 (V3)
+
+group: PWM3
+pin 107 (U3)
+
+group: PWM4
+pin 108 (W3)
+
+group: PWM5
+pin 109 (AA3)
+
+group: PWM6
+pin 110 (Y3)
+
+group: PWM7
+pin 111 (T4)
+
+group: RGMII1
+pin 164 (B4)
+pin 165 (A4)
+pin 166 (A3)
+pin 167 (D6)
+pin 168 (C5)
+pin 169 (C4)
+pin 152 (B5)
+pin 153 (E9)
+pin 154 (F9)
+pin 155 (A5)
+pin 156 (E7)
+pin 157 (D7)
+
+group: RGMII2
+pin 158 (B2)
+pin 159 (B1)
+pin 160 (A2)
+pin 161 (B3)
+pin 162 (D5)
+pin 163 (D4)
+pin 170 (C2)
+pin 171 (C1)
+pin 172 (C3)
+pin 173 (D1)
+pin 174 (D2)
+pin 175 (E6)
+
+group: RMII1
+pin 164 (B4)
+pin 166 (A3)
+pin 167 (D6)
+pin 168 (C5)
+pin 169 (C4)
+pin 152 (B5)
+pin 153 (E9)
+pin 154 (F9)
+pin 155 (A5)
+
+group: RMII2
+pin 158 (B2)
+pin 159 (B1)
+pin 160 (A2)
+pin 161 (B3)
+pin 170 (C2)
+pin 172 (C3)
+pin 173 (D1)
+pin 174 (D2)
+pin 175 (E6)
+
+group: RXD1
+pin 95 (W1)
+
+group: RXD2
+pin 103 (T5)
+
+group: RXD3
+pin 39 (B19)
+
+group: RXD4
+pin 47 (H18)
+
+group: SALT1
+pin 52 (E17)
+
+group: SALT10
+pin 211 (AA22)
+
+group: SALT11
+pin 212 (U22)
+
+group: SALT12
+pin 213 (T20)
+
+group: SALT13
+pin 214 (N18)
+
+group: SALT14
+pin 215 (P19)
+
+group: SALT2
+pin 53 (D16)
+
+group: SALT3
+pin 54 (D15)
+
+group: SALT4
+pin 55 (E14)
+
+group: SALT5
+pin 146 (R18)
+
+group: SALT6
+pin 147 (P18)
+
+group: SALT7
+pin 208 (Y21)
+
+group: SALT8
+pin 209 (V21)
+
+group: SALT9
+pin 210 (Y22)
+
+group: SCL1
+pin 196 (M18)
+
+group: SCL2
+pin 198 (M20)
+
+group: SD1
+pin 16 (C12)
+pin 17 (A12)
+pin 18 (B12)
+pin 19 (D9)
+pin 20 (D10)
+pin 21 (E12)
+pin 22 (C11)
+pin 23 (B11)
+
+group: SD2
+pin 24 (F19)
+pin 25 (E21)
+pin 26 (F20)
+pin 27 (D20)
+pin 28 (D21)
+pin 29 (E20)
+pin 30 (G18)
+pin 31 (C21)
+
+group: SDA1
+pin 197 (M19)
+
+group: SDA2
+pin 199 (P20)
+
+group: SGPM
+pin 72 (R2)
+pin 73 (L2)
+pin 74 (N3)
+pin 75 (N4)
+
+group: SGPS1
+pin 48 (A19)
+pin 49 (E19)
+pin 50 (C19)
+pin 51 (E16)
+
+group: SGPS2
+pin 52 (E17)
+pin 53 (D16)
+pin 54 (D15)
+pin 55 (E14)
+
+group: SIOONCTRL
+pin 195 (P21)
+
+group: SIOPBI
+pin 200 (Y20)
+
+group: SIOPBO
+pin 202 (AB21)
+
+group: SIOPWREQ
+pin 194 (P22)
+
+group: SIOPWRGD
+pin 201 (AB20)
+
+group: SIOS3
+pin 192 (R22)
+
+group: SIOS5
+pin 193 (R21)
+
+group: SIOSCI
+pin 203 (AA21)
+
+group: SPI1
+pin 68 (B15)
+pin 69 (C15)
+pin 70 (A14)
+pin 71 (A15)
+
+group: SPI1CS1
+pin 2 (D13)
+
+group: SPI1DEBUG
+pin 64 (C18)
+pin 65 (E15)
+pin 66 (B16)
+pin 67 (C16)
+pin 68 (B15)
+pin 69 (C15)
+pin 70 (A14)
+pin 71 (A15)
+
+group: SPI1PASSTHRU
+pin 64 (C18)
+pin 65 (E15)
+pin 66 (B16)
+pin 67 (C16)
+pin 68 (B15)
+pin 69 (C15)
+pin 70 (A14)
+pin 71 (A15)
+
+group: SPI2CK
+pin 139 (Y19)
+
+group: SPI2CS0
+pin 138 (T17)
+
+group: SPI2CS1
+pin 144 (V20)
+
+group: SPI2MISO
+pin 141 (V19)
+
+group: SPI2MOSI
+pin 140 (W19)
+
+group: TIMER3
+pin 2 (D13)
+
+group: TIMER4
+pin 3 (E13)
+
+group: TIMER5
+pin 4 (C14)
+
+group: TIMER6
+pin 5 (A13)
+
+group: TIMER7
+pin 6 (C13)
+
+group: TIMER8
+pin 7 (B13)
+
+group: TXD1
+pin 94 (V1)
+
+group: TXD2
+pin 102 (R5)
+
+group: TXD3
+pin 38 (A20)
+
+group: TXD4
+pin 46 (G17)
+
+group: UART6
+pin 56 (A18)
+pin 57 (B18)
+pin 58 (D17)
+pin 59 (C17)
+pin 60 (A17)
+pin 61 (B17)
+pin 62 (A16)
+pin 63 (D18)
+
+group: USB11BHID
+pin 234 (B6)
+pin 235 (A6)
+
+group: USB2AD
+pin 232 (A7)
+pin 233 (A8)
+
+group: USB2AH
+pin 232 (A7)
+pin 233 (A8)
+
+group: USB2BD
+pin 234 (B6)
+pin 235 (A6)
+
+group: USB2BH
+pin 234 (B6)
+pin 235 (A6)
+
+group: USBCKI
+pin 12 (J20)
+
+group: VGABIOSROM
+pin 68 (B15)
+pin 69 (C15)
+pin 70 (A14)
+pin 71 (A15)
+
+group: VGAHS
+pin 76 (N5)
+
+group: VGAVS
+pin 77 (R4)
+
+group: VPI24
+pin 89 (T1)
+pin 91 (U2)
+pin 92 (P4)
+pin 93 (P3)
+pin 96 (Y1)
+pin 97 (AB2)
+pin 98 (AA1)
+pin 99 (Y2)
+pin 100 (AA2)
+pin 101 (P5)
+pin 102 (R5)
+pin 103 (T5)
+pin 106 (V3)
+pin 107 (U3)
+pin 108 (W3)
+pin 109 (AA3)
+pin 110 (Y3)
+pin 111 (T4)
+pin 112 (U5)
+pin 113 (U4)
+pin 116 (AB3)
+pin 117 (Y4)
+pin 118 (AA4)
+pin 119 (W4)
+pin 120 (V4)
+pin 121 (W5)
+pin 122 (AA5)
+pin 123 (AB5)
+
+group: VPO
+pin 144 (V20)
+pin 145 (U19)
+pin 146 (R18)
+pin 147 (P18)
+pin 148 (R19)
+pin 149 (W20)
+pin 150 (U20)
+pin 151 (AA20)
+pin 200 (Y20)
+pin 201 (AB20)
+pin 202 (AB21)
+pin 203 (AA21)
+pin 204 (U21)
+pin 205 (W22)
+pin 206 (V22)
+pin 207 (W21)
+pin 208 (Y21)
+pin 209 (V21)
+pin 210 (Y22)
+pin 211 (AA22)
+pin 212 (U22)
+pin 213 (T20)
+pin 214 (N18)
+pin 215 (P19)
+pin 216 (N19)
+pin 217 (T21)
+pin 218 (T22)
+pin 219 (R20)
+
+group: WDTRST1
+pin 218 (T22)
+
+group: WDTRST2
+pin 219 (R20)
+
+===== pinmux-functions =====
+function: ACPI, groups = [ ACPI ]
+function: ADC0, groups = [ ADC0 ]
+function: ADC1, groups = [ ADC1 ]
+function: ADC10, groups = [ ADC10 ]
+function: ADC11, groups = [ ADC11 ]
+function: ADC12, groups = [ ADC12 ]
+function: ADC13, groups = [ ADC13 ]
+function: ADC14, groups = [ ADC14 ]
+function: ADC15, groups = [ ADC15 ]
+function: ADC2, groups = [ ADC2 ]
+function: ADC3, groups = [ ADC3 ]
+function: ADC4, groups = [ ADC4 ]
+function: ADC5, groups = [ ADC5 ]
+function: ADC6, groups = [ ADC6 ]
+function: ADC7, groups = [ ADC7 ]
+function: ADC8, groups = [ ADC8 ]
+function: ADC9, groups = [ ADC9 ]
+function: BMCINT, groups = [ BMCINT ]
+function: DDCCLK, groups = [ DDCCLK ]
+function: DDCDAT, groups = [ DDCDAT ]
+function: ESPI, groups = [ ESPI ]
+function: FWSPICS1, groups = [ FWSPICS1 ]
+function: FWSPICS2, groups = [ FWSPICS2 ]
+function: GPID0, groups = [ GPID0 ]
+function: GPID2, groups = [ GPID2 ]
+function: GPID4, groups = [ GPID4 ]
+function: GPID6, groups = [ GPID6 ]
+function: GPIE0, groups = [ GPIE0 ]
+function: GPIE2, groups = [ GPIE2 ]
+function: GPIE4, groups = [ GPIE4 ]
+function: GPIE6, groups = [ GPIE6 ]
+function: I2C10, groups = [ I2C10 ]
+function: I2C11, groups = [ I2C11 ]
+function: I2C12, groups = [ I2C12 ]
+function: I2C13, groups = [ I2C13 ]
+function: I2C14, groups = [ I2C14 ]
+function: I2C3, groups = [ I2C3 ]
+function: I2C4, groups = [ I2C4 ]
+function: I2C5, groups = [ I2C5 ]
+function: I2C6, groups = [ I2C6 ]
+function: I2C7, groups = [ I2C7 ]
+function: I2C8, groups = [ I2C8 ]
+function: I2C9, groups = [ I2C9 ]
+function: LAD0, groups = [ LAD0 ]
+function: LAD1, groups = [ LAD1 ]
+function: LAD2, groups = [ LAD2 ]
+function: LAD3, groups = [ LAD3 ]
+function: LCLK, groups = [ LCLK ]
+function: LFRAME, groups = [ LFRAME ]
+function: LPCHC, groups = [ LPCHC ]
+function: LPCPD, groups = [ LPCPD ]
+function: LPCPLUS, groups = [ LPCPLUS ]
+function: LPCPME, groups = [ LPCPME ]
+function: LPCRST, groups = [ LPCRST ]
+function: LPCSMI, groups = [ LPCSMI ]
+function: LSIRQ, groups = [ LSIRQ ]
+function: MAC1LINK, groups = [ MAC1LINK ]
+function: MAC2LINK, groups = [ MAC2LINK ]
+function: MDIO1, groups = [ MDIO1 ]
+function: MDIO2, groups = [ MDIO2 ]
+function: NCTS1, groups = [ NCTS1 ]
+function: NCTS2, groups = [ NCTS2 ]
+function: NCTS3, groups = [ NCTS3 ]
+function: NCTS4, groups = [ NCTS4 ]
+function: NDCD1, groups = [ NDCD1 ]
+function: NDCD2, groups = [ NDCD2 ]
+function: NDCD3, groups = [ NDCD3 ]
+function: NDCD4, groups = [ NDCD4 ]
+function: NDSR1, groups = [ NDSR1 ]
+function: NDSR2, groups = [ NDSR2 ]
+function: NDSR3, groups = [ NDSR3 ]
+function: NDSR4, groups = [ NDSR4 ]
+function: NDTR1, groups = [ NDTR1 ]
+function: NDTR2, groups = [ NDTR2 ]
+function: NDTR3, groups = [ NDTR3 ]
+function: NDTR4, groups = [ NDTR4 ]
+function: NRI1, groups = [ NRI1 ]
+function: NRI2, groups = [ NRI2 ]
+function: NRI3, groups = [ NRI3 ]
+function: NRI4, groups = [ NRI4 ]
+function: NRTS1, groups = [ NRTS1 ]
+function: NRTS2, groups = [ NRTS2 ]
+function: NRTS3, groups = [ NRTS3 ]
+function: NRTS4, groups = [ NRTS4 ]
+function: OSCCLK, groups = [ OSCCLK ]
+function: PEWAKE, groups = [ PEWAKE ]
+function: PNOR, groups = [ PNOR ]
+function: PWM0, groups = [ PWM0 ]
+function: PWM1, groups = [ PWM1 ]
+function: PWM2, groups = [ PWM2 ]
+function: PWM3, groups = [ PWM3 ]
+function: PWM4, groups = [ PWM4 ]
+function: PWM5, groups = [ PWM5 ]
+function: PWM6, groups = [ PWM6 ]
+function: PWM7, groups = [ PWM7 ]
+function: RGMII1, groups = [ RGMII1 ]
+function: RGMII2, groups = [ RGMII2 ]
+function: RMII1, groups = [ RMII1 ]
+function: RMII2, groups = [ RMII2 ]
+function: RXD1, groups = [ RXD1 ]
+function: RXD2, groups = [ RXD2 ]
+function: RXD3, groups = [ RXD3 ]
+function: RXD4, groups = [ RXD4 ]
+function: SALT1, groups = [ SALT1 ]
+function: SALT10, groups = [ SALT10 ]
+function: SALT11, groups = [ SALT11 ]
+function: SALT12, groups = [ SALT12 ]
+function: SALT13, groups = [ SALT13 ]
+function: SALT14, groups = [ SALT14 ]
+function: SALT2, groups = [ SALT2 ]
+function: SALT3, groups = [ SALT3 ]
+function: SALT4, groups = [ SALT4 ]
+function: SALT5, groups = [ SALT5 ]
+function: SALT6, groups = [ SALT6 ]
+function: SALT7, groups = [ SALT7 ]
+function: SALT8, groups = [ SALT8 ]
+function: SALT9, groups = [ SALT9 ]
+function: SCL1, groups = [ SCL1 ]
+function: SCL2, groups = [ SCL2 ]
+function: SD1, groups = [ SD1 ]
+function: SD2, groups = [ SD2 ]
+function: SDA1, groups = [ SDA1 ]
+function: SDA2, groups = [ SDA2 ]
+function: SGPM, groups = [ SGPM ]
+function: SGPS1, groups = [ SGPS1 ]
+function: SGPS2, groups = [ SGPS2 ]
+function: SIOONCTRL, groups = [ SIOONCTRL ]
+function: SIOPBI, groups = [ SIOPBI ]
+function: SIOPBO, groups = [ SIOPBO ]
+function: SIOPWREQ, groups = [ SIOPWREQ ]
+function: SIOPWRGD, groups = [ SIOPWRGD ]
+function: SIOS3, groups = [ SIOS3 ]
+function: SIOS5, groups = [ SIOS5 ]
+function: SIOSCI, groups = [ SIOSCI ]
+function: SPI1, groups = [ SPI1 ]
+function: SPI1CS1, groups = [ SPI1CS1 ]
+function: SPI1DEBUG, groups = [ SPI1DEBUG ]
+function: SPI1PASSTHRU, groups = [ SPI1PASSTHRU ]
+function: SPI2CK, groups = [ SPI2CK ]
+function: SPI2CS0, groups = [ SPI2CS0 ]
+function: SPI2CS1, groups = [ SPI2CS1 ]
+function: SPI2MISO, groups = [ SPI2MISO ]
+function: SPI2MOSI, groups = [ SPI2MOSI ]
+function: TIMER3, groups = [ TIMER3 ]
+function: TIMER4, groups = [ TIMER4 ]
+function: TIMER5, groups = [ TIMER5 ]
+function: TIMER6, groups = [ TIMER6 ]
+function: TIMER7, groups = [ TIMER7 ]
+function: TIMER8, groups = [ TIMER8 ]
+function: TXD1, groups = [ TXD1 ]
+function: TXD2, groups = [ TXD2 ]
+function: TXD3, groups = [ TXD3 ]
+function: TXD4, groups = [ TXD4 ]
+function: UART6, groups = [ UART6 ]
+function: USB11BHID, groups = [ USB11BHID ]
+function: USB2AD, groups = [ USB2AD ]
+function: USB2AH, groups = [ USB2AH ]
+function: USB2BD, groups = [ USB2BD ]
+function: USB2BH, groups = [ USB2BH ]
+function: USBCKI, groups = [ USBCKI ]
+function: VGABIOSROM, groups = [ VGABIOSROM ]
+function: VGAHS, groups = [ VGAHS ]
+function: VGAVS, groups = [ VGAVS ]
+function: VPI24, groups = [ VPI24 ]
+function: VPO, groups = [ VPO ]
+function: WDTRST1, groups = [ WDTRST1 ]
+function: WDTRST2, groups = [ WDTRST2 ]
+===== pinmux-pins =====
+Pinmux settings per pin
+Format: pin (name): mux_owner|gpio_owner (strict) hog?
+pin 0 (B14): UNCLAIMED
+pin 1 (D14): UNCLAIMED
+pin 2 (D13): UNCLAIMED
+pin 3 (E13): UNCLAIMED
+pin 4 (C14): device 1e78a340.i2c-bus function I2C9 group I2C9
+pin 5 (A13): device 1e78a340.i2c-bus function I2C9 group I2C9
+pin 6 (C13): UNCLAIMED
+pin 7 (B13): UNCLAIMED
+pin 8 (K19): UNCLAIMED
+pin 9 (L19): UNCLAIMED
+pin 10 (L18): UNCLAIMED
+pin 11 (K18): UNCLAIMED
+pin 12 (J20): UNCLAIMED
+pin 13 (H21): UNCLAIMED
+pin 14 (H22): GPIO 1e780000.gpio:14
+pin 15 (H20): UNCLAIMED
+pin 16 (C12): device 1e78a380.i2c-bus function I2C10 group I2C10
+pin 17 (A12): device 1e78a380.i2c-bus function I2C10 group I2C10
+pin 18 (B12): UNCLAIMED
+pin 19 (D9): UNCLAIMED
+pin 20 (D10): UNCLAIMED
+pin 21 (E12): UNCLAIMED
+pin 22 (C11): UNCLAIMED
+pin 23 (B11): UNCLAIMED
+pin 24 (F19): UNCLAIMED
+pin 25 (E21): UNCLAIMED
+pin 26 (F20): UNCLAIMED
+pin 27 (D20): UNCLAIMED
+pin 28 (D21): UNCLAIMED
+pin 29 (E20): UNCLAIMED
+pin 30 (G18): UNCLAIMED
+pin 31 (C21): UNCLAIMED
+pin 32 (B20): GPIO 1e780000.gpio:32
+pin 33 (C20): UNCLAIMED
+pin 34 (F18): GPIO 1e780000.gpio:34
+pin 35 (F17): UNCLAIMED
+pin 36 (E18): UNCLAIMED
+pin 37 (D19): UNCLAIMED
+pin 38 (A20): UNCLAIMED
+pin 39 (B19): UNCLAIMED
+pin 40 (J19): UNCLAIMED
+pin 41 (J18): UNCLAIMED
+pin 42 (B22): UNCLAIMED
+pin 43 (B21): UNCLAIMED
+pin 44 (A21): UNCLAIMED
+pin 45 (H19): UNCLAIMED
+pin 46 (G17): UNCLAIMED
+pin 47 (H18): UNCLAIMED
+pin 48 (A19): UNCLAIMED
+pin 49 (E19): UNCLAIMED
+pin 50 (C19): UNCLAIMED
+pin 51 (E16): UNCLAIMED
+pin 52 (E17): UNCLAIMED
+pin 53 (D16): UNCLAIMED
+pin 54 (D15): UNCLAIMED
+pin 55 (E14): UNCLAIMED
+pin 56 (A18): UNCLAIMED
+pin 57 (B18): UNCLAIMED
+pin 58 (D17): UNCLAIMED
+pin 59 (C17): UNCLAIMED
+pin 60 (A17): UNCLAIMED
+pin 61 (B17): UNCLAIMED
+pin 62 (A16): UNCLAIMED
+pin 63 (D18): UNCLAIMED
+pin 64 (C18): UNCLAIMED
+pin 65 (E15): UNCLAIMED
+pin 66 (B16): UNCLAIMED
+pin 67 (C16): UNCLAIMED
+pin 68 (B15): UNCLAIMED
+pin 69 (C15): UNCLAIMED
+pin 70 (A14): UNCLAIMED
+pin 71 (A15): UNCLAIMED
+pin 72 (R2): UNCLAIMED
+pin 73 (L2): UNCLAIMED
+pin 74 (N3): UNCLAIMED
+pin 75 (N4): UNCLAIMED
+pin 76 (N5): UNCLAIMED
+pin 77 (R4): UNCLAIMED
+pin 78 (R3): UNCLAIMED
+pin 79 (T3): UNCLAIMED
+pin 80 (L3): device 1e78a140.i2c-bus function I2C5 group I2C5
+pin 81 (L4): device 1e78a140.i2c-bus function I2C5 group I2C5
+pin 82 (L1): device 1e78a180.i2c-bus function I2C6 group I2C6
+pin 83 (N2): device 1e78a180.i2c-bus function I2C6 group I2C6
+pin 84 (N1): device 1e78a1c0.i2c-bus function I2C7 group I2C7
+pin 85 (P1): device 1e78a1c0.i2c-bus function I2C7 group I2C7
+pin 86 (P2): device 1e78a300.i2c-bus function I2C8 group I2C8
+pin 87 (R1): device 1e78a300.i2c-bus function I2C8 group I2C8
+pin 88 (T2): UNCLAIMED
+pin 89 (T1): UNCLAIMED
+pin 90 (U1): UNCLAIMED
+pin 91 (U2): UNCLAIMED
+pin 92 (P4): UNCLAIMED
+pin 93 (P3): UNCLAIMED
+pin 94 (V1): device 1e783000.serial function TXD1 group TXD1
+pin 95 (W1): device 1e783000.serial function RXD1 group RXD1
+pin 96 (Y1): UNCLAIMED
+pin 97 (AB2): UNCLAIMED
+pin 98 (AA1): UNCLAIMED
+pin 99 (Y2): UNCLAIMED
+pin 100 (AA2): UNCLAIMED
+pin 101 (P5): UNCLAIMED
+pin 102 (R5): UNCLAIMED
+pin 103 (T5): UNCLAIMED
+pin 104 (V2): device 1e786000.pwm-tacho-controller function PWM0 group PWM0
+pin 105 (W2): device 1e786000.pwm-tacho-controller function PWM1 group PWM1
+pin 106 (V3): UNCLAIMED
+pin 107 (U3): UNCLAIMED
+pin 108 (W3): UNCLAIMED
+pin 109 (AA3): UNCLAIMED
+pin 110 (Y3): UNCLAIMED
+pin 111 (T4): UNCLAIMED
+pin 112 (U5): UNCLAIMED
+pin 113 (U4): UNCLAIMED
+pin 114 (V5): UNCLAIMED
+pin 115 (AB4): UNCLAIMED
+pin 116 (AB3): UNCLAIMED
+pin 117 (Y4): UNCLAIMED
+pin 118 (AA4): UNCLAIMED
+pin 119 (W4): UNCLAIMED
+pin 120 (V4): UNCLAIMED
+pin 121 (W5): UNCLAIMED
+pin 122 (AA5): UNCLAIMED
+pin 123 (AB5): UNCLAIMED
+pin 124 (Y6): UNCLAIMED
+pin 125 (Y5): UNCLAIMED
+pin 126 (W6): UNCLAIMED
+pin 127 (V6): UNCLAIMED
+pin 128 (A11): device 1e78a0c0.i2c-bus function I2C3 group I2C3
+pin 129 (A10): device 1e78a0c0.i2c-bus function I2C3 group I2C3
+pin 130 (A9): device 1e78a100.i2c-bus function I2C4 group I2C4
+pin 131 (B9): device 1e78a100.i2c-bus function I2C4 group I2C4
+pin 132 (N21): UNCLAIMED
+pin 133 (N22): UNCLAIMED
+pin 134 (B10): UNCLAIMED
+pin 135 (N20): UNCLAIMED
+pin 136 (AA19): UNCLAIMED
+pin 137 (T19): UNCLAIMED
+pin 138 (T17): UNCLAIMED
+pin 139 (Y19): UNCLAIMED
+pin 140 (W19): UNCLAIMED
+pin 141 (V19): UNCLAIMED
+pin 142 (D8): UNCLAIMED
+pin 143 (E10): UNCLAIMED
+pin 144 (V20): UNCLAIMED
+pin 145 (U19): UNCLAIMED
+pin 146 (R18): UNCLAIMED
+pin 147 (P18): UNCLAIMED
+pin 148 (R19): UNCLAIMED
+pin 149 (W20): UNCLAIMED
+pin 150 (U20): UNCLAIMED
+pin 151 (AA20): UNCLAIMED
+pin 152 (B5): device 1e660000.ethernet function RMII1 group RMII1
+pin 153 (E9): device 1e660000.ethernet function RMII1 group RMII1
+pin 154 (F9): device 1e660000.ethernet function RMII1 group RMII1
+pin 155 (A5): device 1e660000.ethernet function RMII1 group RMII1
+pin 156 (E7): UNCLAIMED
+pin 157 (D7): UNCLAIMED
+pin 158 (B2): device 1e680000.ethernet function RMII2 group RMII2
+pin 159 (B1): device 1e680000.ethernet function RMII2 group RMII2
+pin 160 (A2): device 1e680000.ethernet function RMII2 group RMII2
+pin 161 (B3): device 1e680000.ethernet function RMII2 group RMII2
+pin 162 (D5): UNCLAIMED
+pin 163 (D4): UNCLAIMED
+pin 164 (B4): device 1e660000.ethernet function RMII1 group RMII1
+pin 165 (A4): UNCLAIMED
+pin 166 (A3): device 1e660000.ethernet function RMII1 group RMII1
+pin 167 (D6): device 1e660000.ethernet function RMII1 group RMII1
+pin 168 (C5): device 1e660000.ethernet function RMII1 group RMII1
+pin 169 (C4): device 1e660000.ethernet function RMII1 group RMII1
+pin 170 (C2): device 1e680000.ethernet function RMII2 group RMII2
+pin 171 (C1): UNCLAIMED
+pin 172 (C3): device 1e680000.ethernet function RMII2 group RMII2
+pin 173 (D1): device 1e680000.ethernet function RMII2 group RMII2
+pin 174 (D2): device 1e680000.ethernet function RMII2 group RMII2
+pin 175 (E6): device 1e680000.ethernet function RMII2 group RMII2
+pin 176 (F4): UNCLAIMED
+pin 177 (F5): UNCLAIMED
+pin 178 (E2): UNCLAIMED
+pin 179 (E1): UNCLAIMED
+pin 180 (F3): UNCLAIMED
+pin 181 (E3): UNCLAIMED
+pin 182 (G5): UNCLAIMED
+pin 183 (G4): UNCLAIMED
+pin 184 (F2): UNCLAIMED
+pin 185 (G3): UNCLAIMED
+pin 186 (G2): UNCLAIMED
+pin 187 (F1): UNCLAIMED
+pin 188 (H5): UNCLAIMED
+pin 189 (G1): UNCLAIMED
+pin 190 (H3): UNCLAIMED
+pin 191 (H4): UNCLAIMED
+pin 192 (R22): UNCLAIMED
+pin 193 (R21): UNCLAIMED
+pin 194 (P22): UNCLAIMED
+pin 195 (P21): UNCLAIMED
+pin 196 (M18): UNCLAIMED
+pin 197 (M19): UNCLAIMED
+pin 198 (M20): UNCLAIMED
+pin 199 (P20): UNCLAIMED
+pin 200 (Y20): UNCLAIMED
+pin 201 (AB20): UNCLAIMED
+pin 202 (AB21): UNCLAIMED
+pin 203 (AA21): UNCLAIMED
+pin 204 (U21): UNCLAIMED
+pin 205 (W22): UNCLAIMED
+pin 206 (V22): UNCLAIMED
+pin 207 (W21): UNCLAIMED
+pin 208 (Y21): UNCLAIMED
+pin 209 (V21): UNCLAIMED
+pin 210 (Y22): UNCLAIMED
+pin 211 (AA22): UNCLAIMED
+pin 212 (U22): UNCLAIMED
+pin 213 (T20): UNCLAIMED
+pin 214 (N18): UNCLAIMED
+pin 215 (P19): GPIO 1e780000.gpio:215
+pin 216 (N19): UNCLAIMED
+pin 217 (T21): UNCLAIMED
+pin 218 (T22): UNCLAIMED
+pin 219 (R20): UNCLAIMED
+pin 220 (PIN220): UNCLAIMED
+pin 221 (PIN221): UNCLAIMED
+pin 222 (PIN222): UNCLAIMED
+pin 223 (PIN223): UNCLAIMED
+pin 224 (G21): UNCLAIMED
+pin 225 (G20): UNCLAIMED
+pin 226 (D22): UNCLAIMED
+pin 227 (E22): UNCLAIMED
+pin 228 (C22): UNCLAIMED
+pin 229 (F21): UNCLAIMED
+pin 230 (F22): UNCLAIMED
+pin 231 (G22): UNCLAIMED
+pin 232 (A7): device 1e6a0000.usb-vhub function USB2AD group USB2AD
+pin 233 (A8): device 1e6a0000.usb-vhub function USB2AD group USB2AD
+pin 234 (B6): UNCLAIMED
+pin 235 (A6): UNCLAIMED
+===== pins =====
+registered pins: 236
+pin 0 (B14)  1e6e2000.syscon:pinctrl
+pin 1 (D14)  1e6e2000.syscon:pinctrl
+pin 2 (D13)  1e6e2000.syscon:pinctrl
+pin 3 (E13)  1e6e2000.syscon:pinctrl
+pin 4 (C14)  1e6e2000.syscon:pinctrl
+pin 5 (A13)  1e6e2000.syscon:pinctrl
+pin 6 (C13)  1e6e2000.syscon:pinctrl
+pin 7 (B13)  1e6e2000.syscon:pinctrl
+pin 8 (K19)  1e6e2000.syscon:pinctrl
+pin 9 (L19)  1e6e2000.syscon:pinctrl
+pin 10 (L18)  1e6e2000.syscon:pinctrl
+pin 11 (K18)  1e6e2000.syscon:pinctrl
+pin 12 (J20)  1e6e2000.syscon:pinctrl
+pin 13 (H21)  1e6e2000.syscon:pinctrl
+pin 14 (H22)  1e6e2000.syscon:pinctrl
+pin 15 (H20)  1e6e2000.syscon:pinctrl
+pin 16 (C12)  1e6e2000.syscon:pinctrl
+pin 17 (A12)  1e6e2000.syscon:pinctrl
+pin 18 (B12)  1e6e2000.syscon:pinctrl
+pin 19 (D9)  1e6e2000.syscon:pinctrl
+pin 20 (D10)  1e6e2000.syscon:pinctrl
+pin 21 (E12)  1e6e2000.syscon:pinctrl
+pin 22 (C11)  1e6e2000.syscon:pinctrl
+pin 23 (B11)  1e6e2000.syscon:pinctrl
+pin 24 (F19)  1e6e2000.syscon:pinctrl
+pin 25 (E21)  1e6e2000.syscon:pinctrl
+pin 26 (F20)  1e6e2000.syscon:pinctrl
+pin 27 (D20)  1e6e2000.syscon:pinctrl
+pin 28 (D21)  1e6e2000.syscon:pinctrl
+pin 29 (E20)  1e6e2000.syscon:pinctrl
+pin 30 (G18)  1e6e2000.syscon:pinctrl
+pin 31 (C21)  1e6e2000.syscon:pinctrl
+pin 32 (B20)  1e6e2000.syscon:pinctrl
+pin 33 (C20)  1e6e2000.syscon:pinctrl
+pin 34 (F18)  1e6e2000.syscon:pinctrl
+pin 35 (F17)  1e6e2000.syscon:pinctrl
+pin 36 (E18)  1e6e2000.syscon:pinctrl
+pin 37 (D19)  1e6e2000.syscon:pinctrl
+pin 38 (A20)  1e6e2000.syscon:pinctrl
+pin 39 (B19)  1e6e2000.syscon:pinctrl
+pin 40 (J19)  1e6e2000.syscon:pinctrl
+pin 41 (J18)  1e6e2000.syscon:pinctrl
+pin 42 (B22)  1e6e2000.syscon:pinctrl
+pin 43 (B21)  1e6e2000.syscon:pinctrl
+pin 44 (A21)  1e6e2000.syscon:pinctrl
+pin 45 (H19)  1e6e2000.syscon:pinctrl
+pin 46 (G17)  1e6e2000.syscon:pinctrl
+pin 47 (H18)  1e6e2000.syscon:pinctrl
+pin 48 (A19)  1e6e2000.syscon:pinctrl
+pin 49 (E19)  1e6e2000.syscon:pinctrl
+pin 50 (C19)  1e6e2000.syscon:pinctrl
+pin 51 (E16)  1e6e2000.syscon:pinctrl
+pin 52 (E17)  1e6e2000.syscon:pinctrl
+pin 53 (D16)  1e6e2000.syscon:pinctrl
+pin 54 (D15)  1e6e2000.syscon:pinctrl
+pin 55 (E14)  1e6e2000.syscon:pinctrl
+pin 56 (A18)  1e6e2000.syscon:pinctrl
+pin 57 (B18)  1e6e2000.syscon:pinctrl
+pin 58 (D17)  1e6e2000.syscon:pinctrl
+pin 59 (C17)  1e6e2000.syscon:pinctrl
+pin 60 (A17)  1e6e2000.syscon:pinctrl
+pin 61 (B17)  1e6e2000.syscon:pinctrl
+pin 62 (A16)  1e6e2000.syscon:pinctrl
+pin 63 (D18)  1e6e2000.syscon:pinctrl
+pin 64 (C18)  1e6e2000.syscon:pinctrl
+pin 65 (E15)  1e6e2000.syscon:pinctrl
+pin 66 (B16)  1e6e2000.syscon:pinctrl
+pin 67 (C16)  1e6e2000.syscon:pinctrl
+pin 68 (B15)  1e6e2000.syscon:pinctrl
+pin 69 (C15)  1e6e2000.syscon:pinctrl
+pin 70 (A14)  1e6e2000.syscon:pinctrl
+pin 71 (A15)  1e6e2000.syscon:pinctrl
+pin 72 (R2)  1e6e2000.syscon:pinctrl
+pin 73 (L2)  1e6e2000.syscon:pinctrl
+pin 74 (N3)  1e6e2000.syscon:pinctrl
+pin 75 (N4)  1e6e2000.syscon:pinctrl
+pin 76 (N5)  1e6e2000.syscon:pinctrl
+pin 77 (R4)  1e6e2000.syscon:pinctrl
+pin 78 (R3)  1e6e2000.syscon:pinctrl
+pin 79 (T3)  1e6e2000.syscon:pinctrl
+pin 80 (L3)  1e6e2000.syscon:pinctrl
+pin 81 (L4)  1e6e2000.syscon:pinctrl
+pin 82 (L1)  1e6e2000.syscon:pinctrl
+pin 83 (N2)  1e6e2000.syscon:pinctrl
+pin 84 (N1)  1e6e2000.syscon:pinctrl
+pin 85 (P1)  1e6e2000.syscon:pinctrl
+pin 86 (P2)  1e6e2000.syscon:pinctrl
+pin 87 (R1)  1e6e2000.syscon:pinctrl
+pin 88 (T2)  1e6e2000.syscon:pinctrl
+pin 89 (T1)  1e6e2000.syscon:pinctrl
+pin 90 (U1)  1e6e2000.syscon:pinctrl
+pin 91 (U2)  1e6e2000.syscon:pinctrl
+pin 92 (P4)  1e6e2000.syscon:pinctrl
+pin 93 (P3)  1e6e2000.syscon:pinctrl
+pin 94 (V1)  1e6e2000.syscon:pinctrl
+pin 95 (W1)  1e6e2000.syscon:pinctrl
+pin 96 (Y1)  1e6e2000.syscon:pinctrl
+pin 97 (AB2)  1e6e2000.syscon:pinctrl
+pin 98 (AA1)  1e6e2000.syscon:pinctrl
+pin 99 (Y2)  1e6e2000.syscon:pinctrl
+pin 100 (AA2)  1e6e2000.syscon:pinctrl
+pin 101 (P5)  1e6e2000.syscon:pinctrl
+pin 102 (R5)  1e6e2000.syscon:pinctrl
+pin 103 (T5)  1e6e2000.syscon:pinctrl
+pin 104 (V2)  1e6e2000.syscon:pinctrl
+pin 105 (W2)  1e6e2000.syscon:pinctrl
+pin 106 (V3)  1e6e2000.syscon:pinctrl
+pin 107 (U3)  1e6e2000.syscon:pinctrl
+pin 108 (W3)  1e6e2000.syscon:pinctrl
+pin 109 (AA3)  1e6e2000.syscon:pinctrl
+pin 110 (Y3)  1e6e2000.syscon:pinctrl
+pin 111 (T4)  1e6e2000.syscon:pinctrl
+pin 112 (U5)  1e6e2000.syscon:pinctrl
+pin 113 (U4)  1e6e2000.syscon:pinctrl
+pin 114 (V5)  1e6e2000.syscon:pinctrl
+pin 115 (AB4)  1e6e2000.syscon:pinctrl
+pin 116 (AB3)  1e6e2000.syscon:pinctrl
+pin 117 (Y4)  1e6e2000.syscon:pinctrl
+pin 118 (AA4)  1e6e2000.syscon:pinctrl
+pin 119 (W4)  1e6e2000.syscon:pinctrl
+pin 120 (V4)  1e6e2000.syscon:pinctrl
+pin 121 (W5)  1e6e2000.syscon:pinctrl
+pin 122 (AA5)  1e6e2000.syscon:pinctrl
+pin 123 (AB5)  1e6e2000.syscon:pinctrl
+pin 124 (Y6)  1e6e2000.syscon:pinctrl
+pin 125 (Y5)  1e6e2000.syscon:pinctrl
+pin 126 (W6)  1e6e2000.syscon:pinctrl
+pin 127 (V6)  1e6e2000.syscon:pinctrl
+pin 128 (A11)  1e6e2000.syscon:pinctrl
+pin 129 (A10)  1e6e2000.syscon:pinctrl
+pin 130 (A9)  1e6e2000.syscon:pinctrl
+pin 131 (B9)  1e6e2000.syscon:pinctrl
+pin 132 (N21)  1e6e2000.syscon:pinctrl
+pin 133 (N22)  1e6e2000.syscon:pinctrl
+pin 134 (B10)  1e6e2000.syscon:pinctrl
+pin 135 (N20)  1e6e2000.syscon:pinctrl
+pin 136 (AA19)  1e6e2000.syscon:pinctrl
+pin 137 (T19)  1e6e2000.syscon:pinctrl
+pin 138 (T17)  1e6e2000.syscon:pinctrl
+pin 139 (Y19)  1e6e2000.syscon:pinctrl
+pin 140 (W19)  1e6e2000.syscon:pinctrl
+pin 141 (V19)  1e6e2000.syscon:pinctrl
+pin 142 (D8)  1e6e2000.syscon:pinctrl
+pin 143 (E10)  1e6e2000.syscon:pinctrl
+pin 144 (V20)  1e6e2000.syscon:pinctrl
+pin 145 (U19)  1e6e2000.syscon:pinctrl
+pin 146 (R18)  1e6e2000.syscon:pinctrl
+pin 147 (P18)  1e6e2000.syscon:pinctrl
+pin 148 (R19)  1e6e2000.syscon:pinctrl
+pin 149 (W20)  1e6e2000.syscon:pinctrl
+pin 150 (U20)  1e6e2000.syscon:pinctrl
+pin 151 (AA20)  1e6e2000.syscon:pinctrl
+pin 152 (B5)  1e6e2000.syscon:pinctrl
+pin 153 (E9)  1e6e2000.syscon:pinctrl
+pin 154 (F9)  1e6e2000.syscon:pinctrl
+pin 155 (A5)  1e6e2000.syscon:pinctrl
+pin 156 (E7)  1e6e2000.syscon:pinctrl
+pin 157 (D7)  1e6e2000.syscon:pinctrl
+pin 158 (B2)  1e6e2000.syscon:pinctrl
+pin 159 (B1)  1e6e2000.syscon:pinctrl
+pin 160 (A2)  1e6e2000.syscon:pinctrl
+pin 161 (B3)  1e6e2000.syscon:pinctrl
+pin 162 (D5)  1e6e2000.syscon:pinctrl
+pin 163 (D4)  1e6e2000.syscon:pinctrl
+pin 164 (B4)  1e6e2000.syscon:pinctrl
+pin 165 (A4)  1e6e2000.syscon:pinctrl
+pin 166 (A3)  1e6e2000.syscon:pinctrl
+pin 167 (D6)  1e6e2000.syscon:pinctrl
+pin 168 (C5)  1e6e2000.syscon:pinctrl
+pin 169 (C4)  1e6e2000.syscon:pinctrl
+pin 170 (C2)  1e6e2000.syscon:pinctrl
+pin 171 (C1)  1e6e2000.syscon:pinctrl
+pin 172 (C3)  1e6e2000.syscon:pinctrl
+pin 173 (D1)  1e6e2000.syscon:pinctrl
+pin 174 (D2)  1e6e2000.syscon:pinctrl
+pin 175 (E6)  1e6e2000.syscon:pinctrl
+pin 176 (F4)  1e6e2000.syscon:pinctrl
+pin 177 (F5)  1e6e2000.syscon:pinctrl
+pin 178 (E2)  1e6e2000.syscon:pinctrl
+pin 179 (E1)  1e6e2000.syscon:pinctrl
+pin 180 (F3)  1e6e2000.syscon:pinctrl
+pin 181 (E3)  1e6e2000.syscon:pinctrl
+pin 182 (G5)  1e6e2000.syscon:pinctrl
+pin 183 (G4)  1e6e2000.syscon:pinctrl
+pin 184 (F2)  1e6e2000.syscon:pinctrl
+pin 185 (G3)  1e6e2000.syscon:pinctrl
+pin 186 (G2)  1e6e2000.syscon:pinctrl
+pin 187 (F1)  1e6e2000.syscon:pinctrl
+pin 188 (H5)  1e6e2000.syscon:pinctrl
+pin 189 (G1)  1e6e2000.syscon:pinctrl
+pin 190 (H3)  1e6e2000.syscon:pinctrl
+pin 191 (H4)  1e6e2000.syscon:pinctrl
+pin 192 (R22)  1e6e2000.syscon:pinctrl
+pin 193 (R21)  1e6e2000.syscon:pinctrl
+pin 194 (P22)  1e6e2000.syscon:pinctrl
+pin 195 (P21)  1e6e2000.syscon:pinctrl
+pin 196 (M18)  1e6e2000.syscon:pinctrl
+pin 197 (M19)  1e6e2000.syscon:pinctrl
+pin 198 (M20)  1e6e2000.syscon:pinctrl
+pin 199 (P20)  1e6e2000.syscon:pinctrl
+pin 200 (Y20)  1e6e2000.syscon:pinctrl
+pin 201 (AB20)  1e6e2000.syscon:pinctrl
+pin 202 (AB21)  1e6e2000.syscon:pinctrl
+pin 203 (AA21)  1e6e2000.syscon:pinctrl
+pin 204 (U21)  1e6e2000.syscon:pinctrl
+pin 205 (W22)  1e6e2000.syscon:pinctrl
+pin 206 (V22)  1e6e2000.syscon:pinctrl
+pin 207 (W21)  1e6e2000.syscon:pinctrl
+pin 208 (Y21)  1e6e2000.syscon:pinctrl
+pin 209 (V21)  1e6e2000.syscon:pinctrl
+pin 210 (Y22)  1e6e2000.syscon:pinctrl
+pin 211 (AA22)  1e6e2000.syscon:pinctrl
+pin 212 (U22)  1e6e2000.syscon:pinctrl
+pin 213 (T20)  1e6e2000.syscon:pinctrl
+pin 214 (N18)  1e6e2000.syscon:pinctrl
+pin 215 (P19)  1e6e2000.syscon:pinctrl
+pin 216 (N19)  1e6e2000.syscon:pinctrl
+pin 217 (T21)  1e6e2000.syscon:pinctrl
+pin 218 (T22)  1e6e2000.syscon:pinctrl
+pin 219 (R20)  1e6e2000.syscon:pinctrl
+pin 220 (PIN220)  1e6e2000.syscon:pinctrl
+pin 221 (PIN221)  1e6e2000.syscon:pinctrl
+pin 222 (PIN222)  1e6e2000.syscon:pinctrl
+pin 223 (PIN223)  1e6e2000.syscon:pinctrl
+pin 224 (G21)  1e6e2000.syscon:pinctrl
+pin 225 (G20)  1e6e2000.syscon:pinctrl
+pin 226 (D22)  1e6e2000.syscon:pinctrl
+pin 227 (E22)  1e6e2000.syscon:pinctrl
+pin 228 (C22)  1e6e2000.syscon:pinctrl
+pin 229 (F21)  1e6e2000.syscon:pinctrl
+pin 230 (F22)  1e6e2000.syscon:pinctrl
+pin 231 (G22)  1e6e2000.syscon:pinctrl
+pin 232 (A7)  1e6e2000.syscon:pinctrl
+pin 233 (A8)  1e6e2000.syscon:pinctrl
+pin 234 (B6)  1e6e2000.syscon:pinctrl
+pin 235 (A6)  1e6e2000.syscon:pinctrl

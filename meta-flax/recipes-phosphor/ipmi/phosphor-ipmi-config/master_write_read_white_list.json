@@ -1,0 +1,11 @@
+{
+    "filters": [
+        {
+            "busId": "0x00",
+            "slaveAddr": "0x00",
+            "slaveAddrMask": "0x00",
+            "command": "0x00",
+            "commandMask": "0x00"
+        }
+    ]
+}

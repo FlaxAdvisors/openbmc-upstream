@@ -1,0 +1,373 @@
+[
+    {
+        "Exposes": [
+            {
+                "Address": "$address",
+                "Bus": "$bus",
+                "Name": "PSU $ADDRESS % 4 + 1 FRU",
+                "Type": "EEPROM"
+            },
+            {
+                "Class": "fan",
+                "FFGainCoefficient": 1.0,
+                "FFOffCoefficient": 0.0,
+                "ICoefficient": 0.0,
+                "ILimitMax": 0.0,
+                "ILimitMin": 0.0,
+                "Inputs": [
+                    "PSU$ADDRESS % 4 + 1 Fan Speed 1"
+                ],
+                "Name": "PSU$ADDRESS % 4 + 1 Fan 1",
+		"Unit": "xyz.openbmc_project.Sensor.Value.Unit.RPMS",
+		"EvStat": 162,
+                "NegativeHysteresis": 2.0,
+                "OutLimitMax": 100.0,
+                "OutLimitMin": 30.0,
+                "Outputs": [
+                    "Pwm PSU$ADDRESS % 4 + 1 Fan 1"
+                ],
+                "PCoefficient": 0.0,
+                "PositiveHysteresis": 0.0,
+                "SlewNeg": 0.0,
+                "SlewPos": 0.0,
+                "Type": "Pid",
+                "Zones": [
+                    "PSU"
+                ],
+		"SdrInfo": [
+                {
+                        "SdrVersion": "0x51",
+                        "RecordType": "0x01",
+                        "RecordLen": 0,
+                        "OwnerId": "0x20",
+                        "OwnerLun": 0,
+                        "EntityId": 0,
+                        "EntityInstance": 1,
+                        "SensorInit": "0xF7",
+                        "SensorCap": "0x48",
+                        "SensorType" : "0x04",
+                        "SensorUnit1" : 0,
+                        "SensorUnit2" : 18,
+                        "ModifierUnit": 0,
+                        "Linearization": 0,
+                        "NominalReading": "0x97",
+                        "NormalMax" : "0xC5",
+                        "NormalMin" : "0x8b",
+                        "MaxReading" : "0xff",
+                        "MinReading" : 0,
+                        "PositiveHysteris" : 0,
+                        "NegativeHysteresis" : 0,
+                        "IdStringLen" : 0
+                }
+            ]
+            },
+            {
+                "Class": "temp",
+                "FFGainCoefficient": 0.0,
+                "FFOffCoefficient": 0.0,
+                "ICoefficient": -4.64,
+                "ILimitMax": 100,
+                "ILimitMin": 30,
+                "Inputs": [
+                    "PSU$ADDRESS % 4 + 1 Temperature"
+                ],
+                "Name": "PSU$ADDRESS % 4 + 1 Temperature",
+		"Unit": "xyz.openbmc_project.Sensor.Value.Unit.DegreesC",
+		"EvStat": 162,
+                "NegativeHysteresis": 5.0,
+                "OutLimitMax": 100,
+                "OutLimitMin": 30,
+                "Outputs": [],
+                "PCoefficient": -0.15,
+                "PositiveHysteresis": 0.0,
+                "SetPoint": 50.0,
+                "SlewNeg": -1,
+                "SlewPos": 0.0,
+                "Type": "Pid",
+                "Zones": [
+                    "PSU"
+                ],
+	        "SdrInfo": [
+                {
+                        "SdrVersion": "0x51",
+                        "RecordType": "0x01",
+                        "RecordLen": 0,
+                        "OwnerId": "0x20",
+                        "OwnerLun": 0,
+                        "EntityId": 0,
+                        "EntityInstance": 1,
+                        "SensorInit": "0xF7",
+                        "SensorCap": "0x48",
+                        "SensorType" : "0x01",
+                        "SensorUnit1" : 0,
+                        "SensorUnit2" : 1,
+                        "ModifierUnit": 0,
+                        "Linearization": 0,
+                        "NominalReading": "0x97",
+                        "NormalMax" : "0xC5",
+                        "NormalMin" : "0x8b",
+                        "MaxReading" : "0xff",
+                        "MinReading" : 0,
+                        "PositiveHysteris" : 0,
+                        "NegativeHysteresis" : 0,
+                        "IdStringLen" : 0
+                }
+            ]
+            },
+            {
+                "Class": "Floor",
+                "Inputs": [
+                    "PSU$ADDRESS % 4 + 1 Temperature"
+                ],
+                "Name": "PSU $ADDRESS % 4 + 1 LCC",
+		"EvStat": 162,
+                "NegativeHysteresis": 2,
+                "Output": [
+                    40.0,
+                    100.0
+                ],
+                "PositiveHysteresis": 0,
+                "Reading": [
+                    30.0,
+                    65.0
+                ],
+                "Type": "Stepwise",
+                "Zones": [
+                    "PSU"
+                ]
+            },
+            {
+                "Address": "$ADDRESS % 4 + 88",
+                "Bus": "$bus",
+                "Labels": [
+                    "pin",
+                    "pout1",
+                    "vin",
+                    "iin",
+                    "iout1",
+                    "temp1",
+                    "fan1"
+                ],
+	       "SdrInfo": [
+                {
+                       "SdrVersion": "0x51",
+                        "RecordType": "0x01",
+                        "RecordLen": 0,
+                        "OwnerId": "0x20",
+                        "OwnerLun": 0,
+                        "EntityId": 0,
+                        "EntityInstance": 1,
+                        "SensorInit": "0xF7",
+                        "SensorCap": "0x48",
+                        "SensorType" : "0x02",
+			"EventType" : "0x01",
+                        "SensorUnit1" : 0,
+                        "SensorUnit2" : 38,
+                        "ModifierUnit": 0,
+                        "Linearization": 0,
+                        "NominalReading": "0x97",
+                        "NormalMax" : "0xC5",
+                        "NormalMin" : "0x8b",
+                        "MaxReading" : "0xff",
+                        "MinReading" : 0,
+                        "PositiveHysteris" : 0,
+                        "NegativeHysteresis" : 0,
+                        "IdStringLen" : 0
+                }
+            ],
+                "Name": "PSU$ADDRESS % 4 + 1",
+		"EvStat": 162,
+                "Thresholds": [
+                    {
+                        "Direction": "greater than",
+                        "Label": "pin",
+                        "Name": "upper critical",
+                        "Severity": 1,
+                        "Value": 1516.5
+                    },
+                    {
+                        "Direction": "greater than",
+                        "Label": "pin",
+                        "Name": "upper non critical",
+                        "Severity": 0,
+                        "Value": 1364.8
+                    },
+		    {
+                        "Direction": "less than",
+                        "Label": "fan1",
+                        "Name": "lower critical",
+                        "Severity": 1,
+                        "Value": 2080
+                    },
+                    {
+                        "Direction": "less than",
+                        "Label": "fan1",
+                        "Name": "lower non critical",
+                        "Severity": 0,
+                         "Value": 2260
+                   },
+		   {
+                        "Direction": "less than",
+                        "Label": "pout1",
+                        "Name": "lower critical",
+                        "Severity": 1,
+                        "Value": 92
+                   },
+                   {
+                        "Direction": "less than",
+                        "Label": "pout1",
+                        "Name": "lower non critical",
+                        "Severity": 0,
+                        "Value": 102
+                   },
+                   {
+                        "Direction": "less than",
+                        "Label": "vin",
+                        "Name": "lower critical",
+                        "Severity": 1,
+                        "Value": 200
+                   },
+                   {
+                        "Direction": "less than",
+                        "Label": "vin",
+                        "Name": "lower non critical",
+                        "Severity": 0,
+                        "Value": 210
+                   },
+                   {
+                       "Direction": "less than",
+                       "Label": "iin",
+                       "Name": "lower critical",
+                       "Severity": 1,
+                       "Value": 1
+                   },
+                   {
+                       "Direction": "less than",
+                       "Label": "iin",
+                       "Name": "lower non critical",
+                       "Severity": 0,
+                       "Value": 2
+                   },
+                   {
+                        "Direction": "greater than",
+                        "Label": "iout1",
+                        "Name": "upper critical",
+                        "Severity": 1,
+                        "Value": 125
+                    },
+                    {
+                        "Direction": "greater than",
+                        "Label": "iout1",
+                        "Name": "upper non critical",
+                        "Severity": 0,
+                        "Value": 100
+                    },
+                    {
+                        "Direction": "greater than",
+                        "Label": "temp1",
+                        "Name": "upper critical",
+                        "Severity": 1,
+                        "Value": 65
+                    },
+                    {
+                        "Direction": "greater than",
+                        "Label": "temp1",
+                        "Name": "upper non critical",
+                        "Severity": 0,
+                        "Value": 62
+                    }
+                ],
+                "Type": "pmbus"
+            },
+	    {
+           "Address": "$ADDRESS % 4 + 88",
+           "Bus": "$bus",
+           "Name": "PSU$ADDRESS % 4 + 1 status",
+           "subName": "_status",
+           "EvStat": 231,
+           "Unit": "xyz.openbmc_project.Sensor.Value.Unit.Discrete",
+           "DType": "0x08",
+           "EventOffset": "0x00",
+           "SubType": "0x00",
+           "Type": "pmbusdisc",
+           "SdrInfo": [
+                {
+                        "SdrVersion": "0x51",
+                        "RecordType": "0x01",
+                        "RecordLen": 0,
+                        "OwnerId": 0,
+                        "OwnerLun": "0x20",
+                        "EntityId": 0,
+                        "EntityInstance": 1,
+                        "SensorInit": "0xF7",
+                        "SensorCap": "0x48",
+                        "SensorType" : "0x02",
+			"EventType": "0x6f",
+                        "SensorUnit1" : 0,
+                        "SensorUnit2" : 38,
+                        "ModifierUnit": 0,
+                        "Linearization": 0,
+                        "NominalReading": "0x97",
+                        "NormalMax" : "0xC5",
+                        "NormalMin" : "0x8b",
+                        "MaxReading" : "0xff",
+                        "MinReading" : 0,
+                        "PositiveHysteris" : 0,
+                        "NegativeHysteresis" : 0,
+                        "IdStringLen" : 0
+                }
+
+	   ]
+	    },
+	    {
+           "Address": "$ADDRESS % 4 + 88",
+           "Bus": "$bus",
+           "Name": "PSU$ADDRESS % 4 + 1 fanfail",
+           "subName": "_fanfail",
+           "EvStat": 231,
+           "Unit": "xyz.openbmc_project.Sensor.Value.Unit.Discrete",
+           "DType": "0x04",
+           "EventOffset": "0x00",
+           "SubType": "0x01",
+           "Type": "pmbusdisc",
+           "SdrInfo": [
+                {
+
+                        "SdrVersion": "0x51",
+                        "RecordType": "0x01",
+                        "RecordLen": 0,
+                        "OwnerId": 0,
+                        "OwnerLun": "0x20",
+                        "EntityId": 0,
+                        "EntityInstance": 1,
+                        "SensorInit": "0xF7",
+                        "SensorCap": "0x48",
+                        "SensorType" : "0x02",
+			"EventType": "0x03",
+                        "SensorUnit1" : 0,
+                        "SensorUnit2" : 38,
+                        "ModifierUnit": 0,
+                        "Linearization": 0,
+                        "NominalReading": "0x97",
+                        "NormalMax" : "0xC5",
+                        "NormalMin" : "0x8b",
+                       "MaxReading" : "0xff",
+                        "MinReading" : 0,
+                        "PositiveHysteris" : 0,
+                        "NegativeHysteresis" : 0,
+                        "IdStringLen" : 0
+                }
+	   ]
+        }
+        ],
+        "Name": "Flextronics S-1100ADU00-201 PSU $ADDRESS % 4 + 1",
+        "Probe": "xyz.openbmc_project.FruDevice({'PRODUCT_PRODUCT_NAME': 'S-1100ADU00-201'})",
+        "Type": "PowerSupply",
+        "xyz.openbmc_project.Inventory.Decorator.Asset": {
+            "Manufacturer": "$PRODUCT_MANUFACTURER",
+            "Model": "$PRODUCT_PRODUCT_NAME",
+            "PartNumber": "$PRODUCT_PART_NUMBER",
+            "SerialNumber": "$PRODUCT_SERIAL_NUMBER"
+        }
+    }
+]
